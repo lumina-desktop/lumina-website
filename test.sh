@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Make sure all the required packages are installed first
-for _pkg in `cat pkg_list`
+for _pkg in "gohugo"
 do
   echo "Checking for Package: ${_pkg}"
   pkg info -qe  "${_pkg}"

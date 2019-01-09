@@ -32,7 +32,7 @@ home = [ "HTML", "RSS", "JSON"]
   editURL = "https://github.com/lumina-desktop/lumina-desktop.github.io/hugo-site/content/"
   # Author of the site, will be used in meta information
   author = "Ken Moore"
-  copyrightyear = "2012-2018"
+  copyrightyear = "2012-2019"
   # Description of the site, will be used in meta information
   description = "Lumina desktop environment project page"
   # Shows a checkmark for visited pages on the menu
