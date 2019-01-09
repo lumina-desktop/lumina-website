@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ken Moore News</title>
-    <link>http://lumina-desktop.github.io/</link>
+    <link>http://lumina-desktop.github.io/lumina-website/</link>
     <description>Recent content from Ken Moore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2012-2018 : Ken Moore</copyright>
     
-        <atom:link href="http://lumina-desktop.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://lumina-desktop.github.io/lumina-website/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
