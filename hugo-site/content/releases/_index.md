@@ -11,7 +11,7 @@ pre = "<i class='fa fa-star'></i>	"
 All of the sources for release versions of the Lumina desktop and it's suite of utilities are available for download on the [GitHub repository](https://github.com/lumina-desktop/lumina/releases).
 
 ## Project Trident
-{{< banner "/images/project-trident.svg" >}}
+{{< banner "project-trident.svg" >}}
 [Project Trident](http://project-trident.org) is a desktop distribution of TrueOS that is created and maintained by the same authors of the Lumina Desktop, and is a quick and easy way to try out the Lumina Desktop on a FreeBSD-based operating system.
 
 ## Pre-built Packages
