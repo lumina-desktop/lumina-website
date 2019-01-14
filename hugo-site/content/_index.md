@@ -6,7 +6,7 @@ weight = 5
 pre = ""
 +++
 
-{{< banner "/images/Lumina_Banner_Gold.png" >}}
+{{< banner "Lumina_Banner_Gold.png" >}}
 
 ### Lightweight Desktop Environment
    * Lumina is designed to have a small footprint, giving your system the best performance possible.

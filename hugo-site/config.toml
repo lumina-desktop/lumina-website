@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "Lumina Desktop Environment"
 theme = "hugo-theme-learn"
 copyright = "(c) 2012-2018 : Ken Moore"
+canonifyURLS = true
 
 [author]
   name = "Ken Moore"
