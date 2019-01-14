@@ -1,7 +1,7 @@
 #!/bin/sh
 #Script to take the statically-generated pages and deploy them with nginx
 DIST_DIR="$1"
-FINAL_SITE="lumina-desktop.github.io/"
+FINAL_SITE="lumina-desktop.github.io/lumina-website"
 
 basedir=`dirname $0`
 basedir=`realpath -q "${basedir}"`

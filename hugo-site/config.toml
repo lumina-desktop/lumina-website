@@ -1,10 +1,10 @@
-baseURL = "https://lumina-desktop.github.io/"
+baseURL = "lumina-desktop.github.io/lumina-website"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Lumina Desktop Environment"
 theme = "hugo-theme-learn"
 copyright = "(c) 2012-2018 : Ken Moore"
-canonifyURLS = true
+
 
 [author]
   name = "Ken Moore"
