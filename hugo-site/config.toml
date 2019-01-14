@@ -1,4 +1,4 @@
-baseURL = "lumina-desktop.github.io/lumina-website"
+#baseURL = "lumina-desktop.github.io/lumina-website"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Lumina Desktop Environment"
@@ -30,7 +30,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
-  editURL = "https://github.com/lumina-desktop/lumina-desktop.github.io/hugo-site/content/"
+  editURL = "https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/"
   # Author of the site, will be used in meta information
   author = "Ken Moore"
   copyrightyear = "2012-2019"
