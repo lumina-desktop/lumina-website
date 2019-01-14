@@ -1,69 +1,69 @@
 [
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/features/",
+	"uri": "https://lumina-desktop.github.io/features/",
 	"title": "Features of Lumina",
 	"tags": [],
 	"description": "",
 	"content": " The Lumina® desktop is designed to be fast, customizable, flexible, and lightweight. Lumina® works great in multi-monitor configurations and with high-resolution monitors (4K+) as well as single-screen configurations on laptops or tablets. Lumina is designed to work out-of-box without end user apps, and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.\nDesktop Features Quick and Easy to Configure Quickly and easily change your display and theming settings using the Lumina® configuration utility (lumina-config on the command-line). It is also a fully-featured desktop configuration where nearly every single item on the desktop can be changed or customized as desired.\n All desktop configuration files are simple plain-text files on the back-end. Desktop will dynamically detect configuration changes to adjust as needed. Appearance profiles can easily be used to reproduce the look and feel of other common desktop systems. Custom appearance profiles can also be created/used. The entire desktop appearance is governed by a simple plugin system  Show desktop icons for files in the \u0026ldquo;Desktop\u0026rdquo; directory, or hide everything for a more minimalistic look. Add desktop widgets to the screen  Application launcher icons Audio file player Calendar Notepad RSS/Atom Feed Reader System statistics monitor (CPU, memory, temperatures) Desktop Links for removable media (if supported by your OS).  Customize the right-click desktop context menu  Shortcuts to any/all applications Launch basic apps (default terminal or file manager) Provide a task manager for the true desktop-minimalists Provide a way to run user-created \u0026ldquo;menu scripts\u0026rdquo; to dynamically generate new types of context menu items.    Fast and Responsive Lumina® is extremely minimal and can be used on systems with as little as 1GB of memory. It is very self-contained and does not require any particular utilities or libraries aside from very small handful. Lumina is designed around the concept of complete modularity. Your applications are completely independant from the desktop itself and can be added/removed at will without loss of functionality.\nOptional Stand-Alone Utilities There are many utilities that are developed alonside the Lumina desktop to ensure that a full-range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.\nInsight File Manager Browse the local filesystem and manage files and directories with the Insight File Manager (lumina-fm on the command line).\n Browse files/directories. Multiple tab support as well as support for two side-by-side directories per tab. Provide instant viewing/rollback of files or directories that are available in ZFS snapshots. Provide support for custom bookmarks. Provides basic interactions with Git to clone a repository or view the status of a local repo. Multiple viewing and sorting options Built-in slideshow viewer for image files with very basic image editing functionality (rotation, zoom in/out) Built-in multimedia viewer for basic playback of local files.  File Archiver Extract or compress files with the Lumina Archiver (lumina-archiver on the command line).\n Compatible with many archive file formats. Easy to use and understand. Create/modify archives, or extract/view individual items from within an archive. Able to burn ISO and IMG boot images to a USB device. Integrated into the Insight file manager menu options for quick access.  Scientific Calculator Simple and Scientific calculation provided with Lumina Calculator (lumina-calculator on the command line).\n Works with a keyboard numpad. Calculator history can be saved as a text document. Advanced scientific calculation is included.  Text Editor Simple text editing provided by Lumina Text Editor (lumina-textedit or lte on the command line).\n Plaintext editor supporting variable fonts and font sizes. Customizable display supports showing line numbers, syntax highlighting, and dynamic word wrapping. Editor autodetects the text file type and applies appropriate syntax highlighting. The user can modify highlighting rules in real time.  Multimedia Playback and Pandora Radio Streaming Local file playlist and Pandora radio streaming provided by the Lumina Media Player (lumina-mediaplayer on the command line).\n Create playlists of local multimedia files (audio and video) Stream music from the Pandora radio streaming service (USA only) Minimizes into the system tray for no-interruption background music.  Create/Edit Screenshots Take screenshots of individual applications, individual screens, or the entire desktop session with the \u0026ldquo;print screen\u0026rdquo; keyboard shortcut (or run lumina-screenshot on the command line).\n Easily take screenshots of anything you need (including user-defined screen regions). Option for including or excluding window borders for single-window screenshots Supports time-delayed screenshots. Crop screenshots directly in the viewer before saving them to a file Copy screenshots directly onto the system clipboard for pasting into other applications (without needing to save a file first). Instant-edit launcher for quickly saving a file and opening the system-default image editor for advanced interactions.  PDF File Viewer View PDF files and use them to give presentations easily with the Lumina PDF Viewer (lumina-pdf on the command line).\n View/Print PDF files. Also includes support for some PDF annotations such as table of contents, hyperlinks, and more! Multiple viewing options, such as full-width, full-page, two-column, and grid mode! Presentation mode with multi-monitor awareness. Also includes a presentation timer on the main screen for making sure you don\u0026rsquo;t run over time!  Multi-Monitor Management Supports configuring multi-monitor displays via the xrandr protocols (lumina-xconfig on the command line).\n Add and remove screens Save a customized screen layout as your user default. Dynamically adjust the physical position or size of each screen. Configure resolution and rotation for each screen. Create custom screen profiles and quickly load them as needed.  "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/releases/",
+	"uri": "https://lumina-desktop.github.io/releases/",
 	"title": "Releases",
 	"tags": [],
 	"description": "",
 	"content": " Sources All of the sources for release versions of the Lumina desktop and it\u0026rsquo;s suite of utilities are available for download on the GitHub repository.\nProject Trident Project Trident is a desktop distribution of TrueOS that is created and maintained by the same authors of the Lumina Desktop, and is a quick and easy way to try out the Lumina Desktop on a FreeBSD-based operating system.\nPre-built Packages Pre-built packages of the Lumina desktop and it\u0026rsquo;s utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:\n BSD Operating Systems  Project Trident TrueOS FreeBSD OpenBSD DragonflyBSD  Linux Distributions  Debian Gentoo Arch Probably a lot of others\u0026hellip;   "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/community/",
+	"uri": "https://lumina-desktop.github.io/community/",
 	"title": "Community Resources",
 	"tags": [],
 	"description": "",
 	"content": " Themes! There is a community repository for providing new theme files, color schemes, wallpapers and more! This repository is available on GitHub and contains all the instructions neccesary to help you get started.\nGet Involved!  If you are a C++/Qt developer, there are tons of areas where you could contribute!  Finding/fixing bugs Writing new interface plugins Adding functionality to existing plugins and more!  If you are a CSS developer, then you might be interested in making new themes for Lumina® (using QSS: it is very similar to CSS but specifically for Qt applications/widgets).  These themes can be created/modified directly within the Lumina® theme engine utility and get applied to all Qt5-based applications.  This website!  This webite is a simple one created using the \u0026ldquo;Hugo\u0026rdquo; static-site generator. All of the sources for this site are managed and run from our repository on GitHub and changes are always welcome!  If you found a bug or have an idea for a cool new feature, you can post bug reports or feature requests on our GitHub repository.  "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/faq/",
+	"uri": "https://lumina-desktop.github.io/faq/",
 	"title": "Frequently Asked Questions",
 	"tags": [],
 	"description": "",
 	"content": " How is it different from other desktop environments?  Designed to work best with TrueOS® and Project Trident®, but specifically works very well for the BSD community at large. Lumina® can also be easily ported to any OS, including Linux distros). Does not require any of the commonly-used desktop implementation frameworks (DBUS, policykit, consolekit, systemd, HALD, etc..). Does not come bundled with any “end-user” applications (web browsers, email clients, multimedia software, office suites, etc..). The only utilities that Lumina brings to the table by default are the ones written specifically for the project and are generally for background/utilitarian functionality (the largest utility is the file manager). Simple text-based configuration file for setting system-wide defaults for new users. This allows distributors of the desktop to easily pre-set the system defaults/interface so it just works for the end user. Plugin-based interface design. This allows the user to make the desktop as light/heavy as desired (within reason) simply by choosing which plugins to have running on their desktop/panels. Designed to function as a general-purpose system interface – easily pre-configured to run on any type/size of device or screen. See the features page for additional details.  What operating systems is it available for? Lumina is highly portable and should work on any Unix-like operating system, with a single OS-compatibility class for porters to check/update as necessary. It has already been ported to all the various BSD operating systems, as well as many of the Linux distributions.\nWhat graphical systems is it available for? Lumina is currently only available on the X11 graphical system. The code-base is designed to be easily ported to another graphical system sometime down the road (only a single file to re-implement in the new system), but at the present moment, there is no scheduled time for any conversions to take place.\nWhat does it look like?  Due to the flexibility of Lumina®’s plugin-based framework, the interface can take almost any appearance that you want (including copying other common desktop interfaces). Please view our “Screenshots” page for some examples. Note that as we continue to create more plugins with every new version of Lumina®, the variability of the interface just continues to grow. If you have a particular plugin/feature that you would like to see, please post a feature request!  How can I get involved? View the Community Page for inspiration on how to get started!\n"
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/screenshots/",
+	"uri": "https://lumina-desktop.github.io/screenshots/",
 	"title": "Screenshots",
 	"tags": [],
 	"description": "",
 	"content": " Coming Soon! Screenshots from old website still need to be re-imported into this one.\n"
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/",
+	"uri": "https://lumina-desktop.github.io/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": " Lightweight Desktop Environment  Lumina is designed to have a small footprint, giving your system the best performance possible.  Intuitive Layout  Lumina is built to flow seamlessly between computer tasks and offers several integrated utilities in one convenient package.  Completely Customizable  Nearly everything in the interface can be configured to suit the individual workflow. From desktop icons and single-application systems to multi-monitor arrangements or a plethora of self-contained workspaces, Lumina can do it all.  Freely Available  Lumina is distributed under the 3-clause BSD license, allowing it to be used by anyone, anywhere (including in proprietary distributions).  Lumina has been written from scratch  Written in C++/Qt5 and is not based on any existing desktop’s code-base, and does not use any of the Linux-based desktop frameworks (ConsoleKit, PolicyKit, D-Bus, systemd, etc..)  Lumina uses a simple built-in interface layer  Communicate directly with the operating system (which is the only class specific to the operating system – making it simple to port/customize). Allows Lumina® to obtain system information in a fast and efficient manner while ensuring desktop stability and reliability.  Recent News  "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/post/",
+	"uri": "https://lumina-desktop.github.io/post/",
 	"title": "Random Journal Entries",
 	"tags": [],
 	"description": "",
 	"content": " This is a collections of random thoughts, ideas, or general ramblings.\nAll Journal Entries: Newest first "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/404/",
+	"uri": "https://lumina-desktop.github.io/404/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " Error 404: Page Not Found It seems that the page that you\u0026rsquo;re trying to access doesn\u0026rsquo;t exist. :worried: If you\u0026rsquo;re sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page. "
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/categories/",
+	"uri": "https://lumina-desktop.github.io/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://lumina-desktop.github.io/lumina-website/tags/",
+	"uri": "https://lumina-desktop.github.io/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
