@@ -40,7 +40,7 @@ Lumina® is extremely minimal and can be used on systems with as little as 1GB o
 Lumina is designed around the concept of complete modularity. Your applications are completely independant from the desktop itself and can be added/removed at will without loss of functionality.
 
 ## Optional Stand-Alone Utilities
-There are many utilities that are developed alonside the Lumina desktop to ensure that a full-range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.
+There are many utilities that are developed alongside the Lumina desktop to ensure that a full-range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.
 
 ### Insight File Manager
 Browse the local filesystem and manage files and directories with the Insight File Manager (`lumina-fm` on the command line).
