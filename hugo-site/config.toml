@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Lumina Desktop Environment"
 theme = "hugo-theme-learn"
-copyright = "(c) 2012-2018 : Ken Moore"
+copyright = "(c) 2012-2020 : Ken Moore"
 
 
 [author]
@@ -33,7 +33,7 @@ home = [ "HTML", "RSS", "JSON"]
   editURL = "https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/"
   # Author of the site, will be used in meta information
   author = "Ken Moore"
-  copyrightyear = "2012-2019"
+  copyrightyear = "2012-2020"
   # Description of the site, will be used in meta information
   description = "Lumina desktop environment project page"
   # Shows a checkmark for visited pages on the menu
