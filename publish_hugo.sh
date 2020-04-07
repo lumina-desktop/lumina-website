@@ -13,5 +13,5 @@ if [ -z "${DIST_DIR}" ] ; then
 fi
 
 # Build the static site with Hugo and deploy it in the dist dir
-/usr/local/bin/hugo --ignoreCache -b "https://${FINAL_SITE}" -s "${basedir}/hugo-site" -d "${DIST_DIR}" --cleanDestinationDir
+hugo --ignoreCache -b "https://${FINAL_SITE}" -s "${basedir}/hugo-site" -d "${DIST_DIR}" --cleanDestinationDir
 exit $?
