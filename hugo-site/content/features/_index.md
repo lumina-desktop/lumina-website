@@ -43,6 +43,9 @@ Lumina is designed around the concept of complete modularity. Your applications 
 There are many utilities that are developed alongside the Lumina desktop to ensure that a full-range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.
 
 ### Insight File Manager
+
+![Insight File Manager](/images/insight-file-manager.png?width=20pc)
+
 Browse the local filesystem and manage files and directories with the Insight File Manager (`lumina-fm` on the command line).
 
 * Browse files/directories.
@@ -55,6 +58,9 @@ Browse the local filesystem and manage files and directories with the Insight Fi
 * Built-in multimedia viewer for basic playback of local files.
 
 ### File Archiver
+
+![Lumina File Archiver](/images/file-archiver.png?width=20pc)
+
 Extract or compress files with the Lumina Archiver (`lumina-archiver` on the command line).
 
 * Compatible with many archive file formats.
@@ -71,6 +77,9 @@ Simple and Scientific calculation provided with Lumina Calculator (`lumina-calcu
 * Advanced scientific calculation is included.
 
 ### Text Editor
+
+![Lumina Text Editor](/images/text-editor.png?width=20pc)
+
 Simple text editing provided by Lumina Text Editor (`lumina-textedit` or `lte` on the command line).
 
 * Plaintext editor supporting variable fonts and font sizes.
@@ -79,6 +88,9 @@ Simple text editing provided by Lumina Text Editor (`lumina-textedit` or `lte` o
 * The user can modify highlighting rules in real time.
 
 ### Multimedia Playback and Pandora Radio Streaming
+
+![Lumina Media Player](/images/player-pandora.png?width=20pc)
+
 Local file playlist and Pandora radio streaming provided by the Lumina Media Player (`lumina-mediaplayer` on the command line).
 
 * Create playlists of local multimedia files (audio and video)
@@ -104,6 +116,9 @@ View PDF files and use them to give presentations easily with the Lumina PDF Vie
 
 
 ### Multi-Monitor Management
+
+![Lumina screen manager](/images/screen-management.png?width=20pc)
+
 Supports configuring multi-monitor displays via the xrandr protocols (`lumina-xconfig` on the command line).
 
 * Add and remove screens

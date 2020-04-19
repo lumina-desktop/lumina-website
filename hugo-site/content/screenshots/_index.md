@@ -9,6 +9,10 @@ pre = "<i class='fa fa-image'></i>	"
 
 Want to know what Lumina® looks like in action? Here are some recent versions of the Lumina desktop, running with a number of different widgets and layouts.
 
+**Lumina 1.6.0** 
+
+![Lumina 1.6.0 on Project Trident](/images/lumina-1.6.0.png?width=20pc)
+
 **Lumina 1.4.0** 
 
 ![Lumina 1.4.0 : Windows-like](/images/1.4.0/desktop-1.png?width=20pc)

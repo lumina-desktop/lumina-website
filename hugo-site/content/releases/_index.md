@@ -12,7 +12,7 @@ All of the sources for release versions of the Lumina desktop and it's suite of 
 
 ## Project Trident
 {{< banner "project-trident.svg" >}}
-[Project Trident](http://project-trident.org) is a desktop distribution of TrueOS that is created and maintained by the same authors of the Lumina Desktop, and is a quick and easy way to try out the Lumina Desktop on a FreeBSD-based operating system.
+[Project Trident](http://project-trident.org) is a desktop distribution of Void Linux that is created and maintained by the same authors of the Lumina Desktop, and is a quick and easy way to try out the Lumina Desktop on a Linux-based operating system.
 
 ## Pre-built Packages
 Pre-built packages of the Lumina desktop and it's utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:
