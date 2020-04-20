@@ -18,12 +18,12 @@ All of the sources for release versions of the Lumina desktop and it's suite of 
 Pre-built packages of the Lumina desktop and it's utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:
 
 * BSD Operating Systems
-   * Project Trident
    * TrueOS
    * FreeBSD
    * OpenBSD
    * DragonflyBSD
 * Linux Distributions
+   * Project Trident
    * Debian
    * Gentoo
    * Arch
