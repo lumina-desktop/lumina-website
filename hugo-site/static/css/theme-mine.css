@@ -2,26 +2,26 @@
 :root{
     
     --MAIN-TEXT-color: #11110; /* Color of text by default */
-    --MAIN-BG-color: #99A3AD; /* Color of main pages */
+    --MAIN-BG-color: #607d8b; /* Color of main pages */
     --MAIN-TITLES-TEXT-color: #111111; /* Color of titles h2-h3-h4-h5 */
     --MAIN-LINK-color: #005aff; /* Color of links */
     --MAIN-LINK-HOVER-color: #0757A6; /* Color of hovered links */
-    --MAIN-ANCHOR-color: #1C90F3; /* color of anchors on titles */
+    --MAIN-ANCHOR-color: #ececec; /* color of anchors on titles */
 
     --MENU-HEADER-BG-color: transparent; /* Background color of menu header */
     --MENU-HEADER-BORDER-color:#11111190; /*Color of menu header border */ 
 
-    --MENU-SEARCH-BG-color:  #99A3AD; /* Search field background color (by default borders + icons) */
-    --MENU-SEARCH-BOX-color:  #d07316; /* Override search field border color */
+    --MENU-SEARCH-BG-color:  #607d8b; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color:  #212121; /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: #111111; /* Override search field icons color */
 
-    --MENU-SECTIONS-ACTIVE-BG-color:#11111150; /* Background color of the active section and its childs */
-    --MENU-SECTIONS-BG-color:#585858; /* Background color of other sections */
-    --MENU-SECTIONS-FG-color:#cfcfcf; /* Foreground color of other sections */
+    --MENU-SECTIONS-ACTIVE-BG-color:#212121; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color:#212121; /* Background color of other sections */
+    --MENU-SECTIONS-FG-color:#ffffff; /* Foreground color of other sections */
     --MENU-SECTIONS-LINK-color: #fffffff0; /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #d07316;  /* Color of links in menu, when hovered */
     --MENU-SECTION-ACTIVE-CATEGORY-color: #d07316; /* Color of active category text */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #99A3AD; /* Color of background for the active category (only) */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #212121; /* Color of background for the active category (only) */
 
     --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #11111190; /* Color of <hr> separator in menu */
@@ -43,12 +43,12 @@ h2, h3, h4, h5 {
 }
 
 blockquote {
-    border-left: 2ex solid var(--MENU-SEARCH-BG-color);
-    background-color: var(--MENU-HEADER-BG-color);
+    border-left: 2ex solid var(--MAIN-TEXT-color);
+    background-color: var(--MENU-SECTIONS-LINK-HOVER-color);
 }
 
 code {
-  background: var(--MENU-SEARCH-BOX-color);
+  background: var(--MENU-SECTIONS-LINK-HOVER-color);
   border-color: var(--MENU-SEARCH-BG-color);
   color: var(--MAIN-TEXT-color);
 }
@@ -118,6 +118,14 @@ a:hover {
 
 #sidebar hr {
     border-color: var(--MENU-SECTION-HR-color);
+}
+
+#sidebar h2, h3, h4, h5 {
+    color: var(--MENU-SECTIONS-FG-color) !important;
+}
+#logo {
+  border-radius: 5ex;
+  background: #ececec70;
 }
 
 /*--------------social----------------*/
