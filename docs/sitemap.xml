@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lumina-desktop.github.io/features/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/releases/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/community/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/faq/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/screenshots/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/post/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/post/2021-06-23/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/404/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/categories/</loc>
+  </url><url>
+    <loc>https://lumina-desktop.github.io/tags/</loc>
+  </url>
+</urlset>
