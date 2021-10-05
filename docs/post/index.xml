@@ -6,15 +6,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2012-2021 : Ken Moore</copyright>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
-
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://lumina-desktop.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
       
     <item>
-
+      <title>Lumina 1.6.1 released.</title>
+      <link>https://lumina-desktop.github.io/post/2021-10-05/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumina-desktop.github.io/post/2021-10-05/</guid>
+      <description>Yes the project is still alive. And in fact there&amp;rsquo;s been a release!
+Lumina Desktop v1.6.1
+It&amp;rsquo;s only been 611 days&amp;hellip; that&amp;rsquo;s not too long right?
+Anyway onto the point, yes the project is still alive and there&amp;rsquo;s been some updates. This release encompases two main things.
+First is a collection of minor fixes that have gone into master since 1.6.0 came out, along with some translation updates. This includes two small additional binaries for use by the desktop.</description>
+    </item>
+      
+    
+      
+    <item>
       <title>Study the past if you would define the future.</title>
       <link>https://lumina-desktop.github.io/post/2021-07-01/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
@@ -27,7 +40,6 @@ Before we discuss the Lumina Desktop today, lets first go back and discuss the p
     
       
     <item>
-
       <title>Maintainership Change</title>
       <link>https://lumina-desktop.github.io/post/2021-06-23/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>

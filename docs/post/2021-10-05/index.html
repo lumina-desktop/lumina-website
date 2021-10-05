@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.80.0" />
-    <meta name="description" content="Lumina desktop maintainer is changing">
+    <meta name="description" content="It&#39;s about time...">
 <meta name="author" content="Ken Moore">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Maintainership Change :: Lumina Desktop Environment</title>
+    <title>Lumina 1.6.1 released. :: Lumina Desktop Environment</title>
     
     
     <link href="/css/nucleus.css?1633471454" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/post/2021-06-23/">
+  <body class="" data-url="/post/2021-10-05/">
     <nav id="sidebar" class="">
 
 
@@ -212,7 +212,7 @@
  
   
     
-      <li data-nav-id="/post/2021-10-05/" title="Lumina 1.6.1 released." class="dd-item ">
+      <li data-nav-id="/post/2021-10-05/" title="Lumina 1.6.1 released." class="dd-item active">
         <a href="/post/2021-10-05/">
         Lumina 1.6.1 released.
         
@@ -250,7 +250,7 @@
  
   
     
-      <li data-nav-id="/post/2021-06-23/" title="Maintainership Change" class="dd-item active">
+      <li data-nav-id="/post/2021-06-23/" title="Maintainership Change" class="dd-item ">
         <a href="/post/2021-06-23/">
         Maintainership Change
         
@@ -311,7 +311,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/post/2021-06-23.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/post/2021-10-05.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -340,7 +340,7 @@
             
           
           
-            <a href='/'>Home</a> > <a href='/post/'>Random Journal Entries</a> > Maintainership Change
+            <a href='/'>Home</a> > <a href='/post/'>Random Journal Entries</a> > Lumina 1.6.1 released.
           
          
           
@@ -352,7 +352,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#yes-the-project-is-still-alive">Yes the project is still alive.</a></li>
+        <li><a href="#note-to-packagers">Note to Packagers:</a></li>
+        <li><a href="#community-links">Community Links</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -364,18 +374,28 @@
         
         <div id="body-inner">
           
-            <h1>Maintainership Change</h1>
+            <h1>Lumina 1.6.1 released.</h1>
           
 
         
 
 
-<p>After more than 7 years of work, I have decided that it is time to let others take over the development of the Lumina Desktop project going forward. It has been an incredible task which has pushed me into areas of development that I had never previously considered. However, with work and life changes, my time for developing new functionality for Lumina has become nearly non-existent, particularly for the Qt5 -&gt; Qt6 change that will be coming within the next year or so.
-By passing the torch over to JT (<a href="https://github.com/q5sys">q5sys on GitHub</a>), I am hoping that the project might receive more timely updates, for the benefit of everyone.</p>
-<p>Thank you all, and I hope for the continued success of the Lumina Desktop project!!</p>
-<p>~~ Ken Moore ~~</p>
-<p><a href="https://github.com/beanpole135">beanpole135</a></p>
-<p><a href="https://www.biblegateway.com/passage/?search=Proverbs%2024%3A27&amp;version=ESV">Proverbs 24:27</a></p>
+<h3 id="yes-the-project-is-still-alive">Yes the project is still alive.</h3>
+<p>And in fact there&rsquo;s been a release!<br>
+<a href="https://github.com/lumina-desktop/lumina/releases/tag/v1.6.1">Lumina Desktop v1.6.1</a></p>
+<p>It&rsquo;s only been 611 days&hellip; that&rsquo;s not too long right?</p>
+<p>Anyway onto the point, yes the project is still alive and there&rsquo;s been some updates. This release encompases two main things.</p>
+<p>First is a collection of minor fixes that have gone into master since 1.6.0 came out, along with some translation updates.  This includes two small additional binaries for use by the desktop.</p>
+<p>Second is that the downstream theme work that we did for Project Trident is now in Lumina as the default theme.</p>
+<p><img src="https://github.com/lumina-desktop/lumina-themes/blob/master/artwork/screenshots/Screenshot-2021-10-02-15-55-58.png" alt=""></p>
+<h3 id="note-to-packagers">Note to Packagers:</h3>
+<p>As of this version there is an additional dependency on the La Capitaine Icon Theme. The fallback old Google Material Design Icon Themes are still included for OSes and distros without a package for La Capitaine, however we are planning on eventually removing them at some point in the future. For more information on that icon theme, see the updated Core [ReadMe] for a link to that icon themes' github repo.</p>
+<h3 id="community-links">Community Links</h3>
+<p>Lastly, we do have some community channels for interaction.  I cant remember when we made the Telegram channel, but the Matrix channel is new.  They are bridged so you only need to join one, but if you&rsquo;d like to stay up to date with the project, feel free to join either.</p>
+<ul>
+<li>Telegram: <a href="https://t.me/luminadesktop">&ldquo;Lumina Desktop&rdquo; public channel</a></li>
+<li>&ldquo;Lumina Desktop&rdquo; public channel on Matrix @ #lumina-desktop:matrix.org</li>
+</ul>
 
 
 <footer class=" footline" >
