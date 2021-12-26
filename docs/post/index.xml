@@ -6,10 +6,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2012-2021 : Ken Moore</copyright>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Dec 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://lumina-desktop.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      
+    <item>
+      <title>Lumina 1.6.2 released.</title>
+      <link>https://lumina-desktop.github.io/post/2021-12-25/</link>
+      <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumina-desktop.github.io/post/2021-12-25/</guid>
+      <description>Another update to Lumina is out The next update to the Lumina Desktop is out!
+Lumina Desktop v1.6.2
+Updates in this release:
+  Lumina-checkpass has been disabled. I mistakingly enabled this in the 1.6.1 release. After speaking with Ken about this, he reminded me that this is a part of the yet unifinished Unified Desktop. As such it is not needed with the current releases and has been disabled from being built by default.</description>
+    </item>
+      
     
       
     <item>

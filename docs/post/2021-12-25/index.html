@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.80.0" />
-    <meta name="description" content="Lumina desktop environment project page">
+    <meta name="description" content="Lumina 1.6.2 released">
 <meta name="author" content="Ken Moore">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Home :: Lumina Desktop Environment</title>
+    <title>Lumina 1.6.2 released. :: Lumina Desktop Environment</title>
     
     
     <link href="/css/nucleus.css?1640485961" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/post/2021-12-25/">
     <nav id="sidebar" class="">
 
 
@@ -188,7 +188,7 @@
   
     
     <li data-nav-id="/post/" title="Random Journal Entries" class="dd-item 
-        
+        parent
         
         
         ">
@@ -212,7 +212,7 @@
  
   
     
-      <li data-nav-id="/post/2021-12-25/" title="Lumina 1.6.2 released." class="dd-item ">
+      <li data-nav-id="/post/2021-12-25/" title="Lumina 1.6.2 released." class="dd-item active">
         <a href="/post/2021-12-25/">
         Lumina 1.6.2 released.
         
@@ -323,103 +323,132 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/post/2021-12-25.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/post/'>Random Journal Entries</a> > Lumina 1.6.2 released.
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#another-update-to-lumina-is-out">Another update to Lumina is out</a></li>
+        <li><a href="#note-to-developers-looking-for-a-project-to-contribute-to">Note to Developers looking for a project to contribute to.</a></li>
+        <li><a href="#community-links">Community Links</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Lumina 1.6.2 released.</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
 
- 
-<img class="bannerimg" src="/images/Lumina_Banner_Gold.png">
-
-<h3 id="lightweight-desktop-environment">Lightweight Desktop Environment</h3>
+<h3 id="another-update-to-lumina-is-out">Another update to Lumina is out</h3>
+<p>The next update to the Lumina Desktop is out!</p>
+<p><a href="https://github.com/lumina-desktop/lumina/releases/tag/v1.6.2">Lumina Desktop v1.6.2</a></p>
+<p>Updates in this release:</p>
+<ol>
+<li>
+<p>Lumina-checkpass has been disabled.  I mistakingly enabled this in the 1.6.1 release.  After speaking with Ken about this, he reminded me that this is a part of the yet unifinished Unified Desktop.  As such it is not needed with the current releases and has been disabled from being built by default.</p>
+</li>
+<li>
+<p>The &ldquo;Open as Root&rdquo; option in Lumina-FM should now be available again to all users of the Lumina Desktop as a result of the next item in this list.</p>
+</li>
+<li>
+<p>The qsudo code from PC-BSD/TrueOS/Project-Trident has been merged into the Lumina-Desktop as a default utility.  This is a graphical utility that was originally written for PC-BSD for when a gui application needed sudo access, historically this was used by the PC-BSD package manager, however it has been included in Lumina going forward.  Packagers, you can disable this in the project file if you desire, however if you do this will also disable the &lsquo;Open as Root&rsquo; feature in Lumina-FM as a result.</p>
+</li>
+<li>
+<p>The icon for the Application Panel and User Menu is now able to be customized as the Start Menu icon has been.  This option is available in Lumina-Configuration under &ldquo;General Options&rdquo;.</p>
+</li>
+<li>
+<p>A bug preventing the user from setting the Fluxbox Window theme in Lumina-Config has been fixed.</p>
+</li>
+<li>
+<p>The default intiial size of Lumina-Config has been increased to make scrolling not nessary when initally starting the utility.</p>
+</li>
+<li>
+<p>The title of the Lumina-Archiver displayed in the window&rsquo;s title bar has been corrected.</p>
+</li>
+<li>
+<p>Two of the Lumina icons that were low grade PNGs and have been replaced with scalable SVG icons.</p>
+</li>
+<li>
+<p>Several Build Scripts for various distros have been added to the Lumina Port directory.  Users should use the packages provided by their distro, however this have been included to assit in the packaging efforts for other distros, and as an archival record of what was required for each distribution.</p>
+</li>
+<li>
+<p>The Docs have been upated to reflect that the minimum Qt version for Lumina is 5.12.0.</p>
+</li>
+</ol>
+<h3 id="note-to-developers-looking-for-a-project-to-contribute-to">Note to Developers looking for a project to contribute to.</h3>
+<p>I will be making a post shortly about these items, but I figured I&rsquo;d go ahead and touch on the matter now.  There are a few larger tasks in Lumina where my skills are lacking that I would greatly appreciate some assitance with.  If there&rsquo;s anyone with experience in C++ and/or Qt, and would be willing to contribute to Lumina under its BSD3-Clause License, please reach out.  Again I&rsquo;ll be making a seperate post shortly about this in more detail.  Once that post has been published I will link to it here.</p>
+<h3 id="community-links">Community Links</h3>
 <ul>
-<li>Lumina is designed to have a small footprint, giving your system the best performance possible.</li>
+<li>Telegram: <a href="https://t.me/luminadesktop">&ldquo;Lumina Desktop&rdquo; public channel</a></li>
+<li>&ldquo;Lumina Desktop&rdquo; public channel on Matrix @ #lumina-desktop:matrix.org</li>
 </ul>
-<h3 id="intuitive-layout">Intuitive Layout</h3>
-<ul>
-<li>Lumina is built to flow seamlessly between computer tasks and offers several integrated utilities in one convenient package.</li>
-</ul>
-<h3 id="completely-customizable">Completely Customizable</h3>
-<ul>
-<li>Nearly everything in the interface can be configured to suit the individual workflow. From desktop icons and single-application systems to multi-monitor arrangements or a plethora of self-contained workspaces, Lumina can do it all.</li>
-</ul>
-<h3 id="freely-available">Freely Available</h3>
-<ul>
-<li>Lumina is distributed under the 3-clause BSD license, allowing it to be used by anyone, anywhere (including in proprietary distributions).</li>
-</ul>
-<h3 id="lumina-has-been-written-from-scratch">Lumina has been written from scratch</h3>
-<ul>
-<li>Written in C++/Qt5 and is not based on any existing desktop’s code-base, and does not use any of the Linux-based desktop frameworks (ConsoleKit, PolicyKit, D-Bus, systemd, etc..)</li>
-</ul>
-<h3 id="lumina-uses-a-simple-built-in-interface-layer">Lumina uses a simple built-in interface layer</h3>
-<ul>
-<li>Communicate directly with the operating system (which is the only class specific to the operating system – making it simple to port/customize). Allows Lumina® to obtain system information in a fast and efficient manner while ensuring desktop stability and reliability.</li>
-</ul>
-<h2 id="recent-news">Recent News</h2>
-
-	
-	<article>
-		<div class="blogpost">
-			<h3><a href="/post/2021-12-25/">Lumina 1.6.2 released.</a></h3>
-			<p><i>2021-12-25<i></p>
-			Another update to Lumina is out The next update to the Lumina Desktop is out!
-Lumina Desktop v1.6.2
-Updates in this release:
-  Lumina-checkpass has been disabled. I mistakingly enabled this in the 1.6.1 release. After speaking with Ken about this, he reminded me that this is a part of the yet unifinished Unified Desktop. As such it is not needed with the current releases and has been disabled from being built by default....
-		</div>
-		<br>
-	</article>
-	
-
-	
-
-	
-	<article>
-		<div class="blogpost">
-			<h3><a href="/post/2021-10-05/">Lumina 1.6.1 released.</a></h3>
-			<p><i>2021-10-05<i></p>
-			Yes the project is still alive. And in fact there&rsquo;s been a release!
-Lumina Desktop v1.6.1
-It&rsquo;s only been 611 days&hellip; that&rsquo;s not too long right?
-Anyway onto the point, yes the project is still alive and there&rsquo;s been some updates. This release encompases two main things.
-First is a collection of minor fixes that have gone into master since 1.6.0 came out, along with some translation updates. This includes two small additional binaries for use by the desktop....
-		</div>
-		<br>
-	</article>
-	
-
-	
-	<article>
-		<div class="blogpost">
-			<h3><a href="/post/2021-07-01/">Study the past if you would define the future.</a></h3>
-			<p><i>2021-07-01<i></p>
-			History &ldquo;Study the past if you would define the future.&rdquo; ~Confucius
-Before we discuss the Lumina Desktop today, lets first go back and discuss the past. The Lumina Desktop was started in 2012 by Ken Moore. He started working on it in his free time. He wanted to design a small lightweight desktop for PC-BSD that didn&rsquo;t come with the challenge of dealing with Linux-isms. However instead of designing a desktop that had BSD-isms, he decided to design the desktop to be as OS agnostic as possible with as few dependecies as possible....
-		</div>
-		<br>
-	</article>
-	
-
-	
-	<article>
-		<div class="blogpost">
-			<h3><a href="/post/2021-06-23/">Maintainership Change</a></h3>
-			<p><i>2021-06-23<i></p>
-			After more than 7 years of work, I have decided that it is time to let others take over the development of the Lumina Desktop project going forward. It has been an incredible task which has pushed me into areas of development that I had never previously considered. However, with work and life changes, my time for developing new functionality for Lumina has become nearly non-existent, particularly for the Qt5 -&gt; Qt6 change that will be coming within the next year or so....
-		</div>
-		<br>
-	</article>
-	
 
 
+<footer class=" footline" >
 	
-  
+</footer>
+
+
         
         </div> 
         
