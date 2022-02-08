@@ -1,15 +1,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ken Moore News</title>
+    <title>Ken Moore &amp; JT Pennington News</title>
     <link>https://lumina-desktop.github.io/post/</link>
-    <description>Recent content from Ken Moore</description>
+    <description>Recent content from Ken Moore &amp; JT Pennington</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>(c) 2012-2021 : Ken Moore</copyright>
-    <lastBuildDate>Sat, 25 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2022 : JT Pennington</copyright>
+    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://lumina-desktop.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      
+    <item>
+      <title>Help requested for three big items for Lumina</title>
+      <link>https://lumina-desktop.github.io/post/2022-02-08/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lumina-desktop.github.io/post/2022-02-08/</guid>
+      <description>In this post I mentioned some of the major work that is on the roadmap for Lumina, and I&amp;rsquo;ve finally made the time to expand on this a little more.
+In this post I&amp;rsquo;m going to cover three of the big ticket items I need help with.
+However before I get into that, a few points worth mentioning. C++/Qt expeirence is a definite requirement. It&amp;rsquo;s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that&amp;rsquo;s what you&amp;rsquo;ll need to know.</description>
+    </item>
+      
     
       
     <item>
