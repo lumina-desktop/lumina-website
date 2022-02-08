@@ -18,9 +18,9 @@
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://lumina-desktop.github.io/post/2022-02-08/</guid>
-      <description>In this post I mentioned some of the major work that is on the roadmap for Lumina, and I&amp;rsquo;ve finally made the time to expand on this a little more.
+      <description>In this post I mentioned some of the major work that is on the road map for Lumina, and I&amp;rsquo;ve finally made the time to expand on this a little more.
 In this post I&amp;rsquo;m going to cover three of the big ticket items I need help with.
-However before I get into that, a few points worth mentioning. C++/Qt expeirence is a definite requirement. It&amp;rsquo;s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that&amp;rsquo;s what you&amp;rsquo;ll need to know.</description>
+However before I get into that, a few points worth mentioning. C++/Qt experience is a definite requirement. It&amp;rsquo;s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that&amp;rsquo;s what you&amp;rsquo;ll need to know.</description>
     </item>
       
     

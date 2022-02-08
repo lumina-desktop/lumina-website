@@ -12,19 +12,19 @@
     <title>Help requested for three big items for Lumina :: Lumina Desktop Environment</title>
     
     
-    <link href="/css/nucleus.css?1644362341" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1644362341" rel="stylesheet">
-    <link href="/css/hybrid.css?1644362341" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1644362341" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1644362341" rel="stylesheet">
-    <link href="/css/auto-complete.css?1644362341" rel="stylesheet">
-    <link href="/css/theme.css?1644362341" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1644362341" rel="stylesheet">
+    <link href="/css/nucleus.css?1644364016" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1644364016" rel="stylesheet">
+    <link href="/css/hybrid.css?1644364016" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1644364016" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1644364016" rel="stylesheet">
+    <link href="/css/auto-complete.css?1644364016" rel="stylesheet">
+    <link href="/css/theme.css?1644364016" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1644364016" rel="stylesheet">
     
-      <link href="/css/theme-mine.css?1644362341" rel="stylesheet">
+      <link href="/css/theme-mine.css?1644364016" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1644362341"></script>
+    <script src="/js/jquery-2.x.min.js?1644364016"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1644362341"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1644362341"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1644364016"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1644364016"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1644362341"></script>
+<script type="text/javascript" src="/js/search.js?1644364016"></script>
 
     
   </div>
@@ -418,37 +418,37 @@
         
 
 
-<p>In <a href="https://lumina-desktop.org/post/2021-07-01/">this post</a> I mentioned some of the major work that is on the roadmap for Lumina, and I&rsquo;ve finally made the time to expand on this a little more.</p>
+<p>In <a href="https://lumina-desktop.org/post/2021-07-01/">this post</a> I mentioned some of the major work that is on the road map for Lumina, and I&rsquo;ve finally made the time to expand on this a little more.</p>
 <p>In this post I&rsquo;m going to cover three of the big ticket items I need help with.</p>
-<p>However before I get into that, a few points worth mentioning. C++/Qt expeirence is a definite requirement.  It&rsquo;s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that&rsquo;s what you&rsquo;ll need to know.  Along with that you will need to be willing to submit your code contributions under a BSD 3-Clause.</p>
+<p>However before I get into that, a few points worth mentioning. C++/Qt experience is a definite requirement.  It&rsquo;s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that&rsquo;s what you&rsquo;ll need to know.  Along with that you will need to be willing to submit your code contributions under a BSD 3-Clause.</p>
 <h3 id="cmake-conversion">Cmake conversion.</h3>
 <p>Right now there are a bunch of build issues on various Linux OSes because of some weird interaction between using Qmake with the .pro files and building them with make.  While Qt6 is moving away from qmake and going to cmake, because of Qt drama, and the fully open version of Qt6 probably being the LTS release with 6.1&hellip; this is not an immediate need.</p>
-<p>Also even after Qt6.1 is released, we can technically keep using Qt5 for quite a while until it&rsquo;s EOL&rsquo;d.  Howeverit would be nice to have this as a build option to help distro and OS packagers build Lumina with less headache.</p>
+<p>Also even after Qt6.1 is released, we can technically keep using Qt5 for quite a while until it&rsquo;s EOL&rsquo;d.  However it would be nice to have this as a build option to help distro and OS packagers build Lumina with less headache.</p>
 <p>I cant believe I just implied cmake would be less headache&hellip; where have I gone wrong in life. lol</p>
 <h3 id="lumina-fm-re-write">Lumina-FM re-write</h3>
-<p>As I mentioned in the prior post, the new file manager will need to function using the QFileSystem class.  Beyond that there are really only a few definite needs for a new FM for Lumina.  So otherwise there&rsquo;s a clean slate for us to design from.  Aside from the normal design of a split design with folders in a panel on the left and the browser on the right&hellip; I&rsquo;m open to ideas.  That being said, we dont be doing Miller columns, if you want that use MacOS.</p>
+<p>As I mentioned in the prior post, the new file manager will need to function using the QFileSystem class.  Beyond that there are really only a few definite needs for a new FM for Lumina.  So otherwise there&rsquo;s a clean slate for us to design from.  Aside from the normal design of a split design with folders in a panel on the left and the browser on the right&hellip; I&rsquo;m open to ideas.  That being said, we don&rsquo;t be doing Miller columns, if you want that use MacOS.</p>
 <p>So the other main needs are:</p>
 <ul>
 <li>
-<p>A toggleable UI panel that would include a slider for accessing ZFS snapshots.  This is IMHO, one of the killer features that Lumina offers that no one else does.  As a result this is an absolute requirement.</p>
+<p>A toggle-able UI panel that would include a slider for accessing ZFS snapshots.  This is IMHO, one of the killer features that Lumina offers that no one else does.  As a result this is an absolute requirement.</p>
 </li>
 <li>
 <p>The Right click menu needs to be written in a way that it&rsquo;s easily extensible for actions.  Obviously the default would include all the normal ones, open/open-with, cut/copy/paste/delete, create new file/directory/etc, open terminal here, etc
-However Id like to make an additional section like we currenly have for additional actions, but to create new ones in a subdir in the sources so it&rsquo;d be possible to be as easy as adding a new c and h file into the sources and linking them into the FM code.  Similar to how Panel widgets for the desktop panel operate.  That way they&rsquo;re somewhat removed from the FM itself, and it makes it a bit easier for people to create their own and hopefully be willing to upstream them.  Initially of all the options out there we could add, the ones I can think of intially would be the &lsquo;add to archive&rsquo; and &lsquo;extract from archive&rsquo; that we already have, and a shred option if someone has a <code>shred</code> utility installed on their system.  (Yes this wont be effective on a ZFS dataset with snapshots, but not everyone uses Lumina on ZFS, so lets give them some secure file deletion options).  I have a bunch of other ideas that I want to add in the future, but we&rsquo;ve got to get the rest of the FM in place first.</p>
+However Id like to make an additional section like we currently have for additional actions, but to create new ones in a subdir in the sources so it&rsquo;d be possible to be as easy as adding a new c and h file into the sources and linking them into the FM code.  Similar to how Panel widgets for the desktop panel operate.  That way they&rsquo;re somewhat removed from the FM itself, and it makes it a bit easier for people to create their own and hopefully be willing to upstream them.  Initially of all the options out there we could add, the ones I can think of initially would be the &lsquo;add to archive&rsquo; and &lsquo;extract from archive&rsquo; that we already have, and a shred option if someone has a <code>shred</code> utility installed on their system.  (Yes this wont be effective on a ZFS dataset with snapshots, but not everyone uses Lumina on ZFS, so lets give them some secure file deletion options).  I have a bunch of other ideas that I want to add in the future, but we&rsquo;ve got to get the rest of the FM in place first.</p>
 </li>
 <li>
-<p>Currently Lumina displays the progress of operations in the desktop panel, I&rsquo;d prefer to bring that into the main FM itself as a togglable panel, with the option to enable desktop notifications if a user desires.  Currently the dialog is pretty basic.  I was working on a more informative progress panel, but I stopped working on it once I realized that the FM needed an entire overhaul.</p>
+<p>Currently Lumina displays the progress of operations in the desktop panel, I&rsquo;d prefer to bring that into the main FM itself as a toggle-able panel, with the option to enable desktop notifications if a user desires.  Currently the dialog is pretty basic.  I was working on a more informative progress panel, but I stopped working on it once I realized that the FM needed an entire overhaul.</p>
 </li>
 </ul>
-<p>One thing that I&rsquo;ve liked about Lumina is that its customizable.  You can set it up the way you want.  I&rsquo;d like to take the oddly missing feautre in most file managers and extend that to the FM as well.  Id like to have a configuration system where panels can be enabled/disabled based on the users wishes.  This is easy enough to do with simply checking a config file when starting the FM to see if a user has certain features enabled.  If a user doesn&rsquo;t want the directory panel to show, easy, then can just disable it in a config file.  If a user wants to define a custom background for the file manager, easy, they can set it in a config file.  Want to have the browser start with two tabs to specific directories, easy, set that in a config file.
+<p>One thing that I&rsquo;ve liked about Lumina is that its customization.  You can set it up the way you want.  I&rsquo;d like to take the oddly missing feature in most file managers and extend that to the FM as well.  Id like to have a configuration system where panels can be enabled/disabled based on the users wishes.  This is easy enough to do with simply checking a config file when starting the FM to see if a user has certain features enabled.  If a user doesn&rsquo;t want the directory panel to show, easy, then can just disable it in a config file.  If a user wants to define a custom background for the file manager, easy, they can set it in a config file.  Want to have the browser start with two tabs to specific directories, easy, set that in a config file.
 This is work I can do myself, but obviously it&rsquo;s something that someone will need to take into account while we&rsquo;re working on this.</p>
-<p>Lastly, there are a few features I&rsquo;ve always wanted in a FM that I&rsquo;ve not seen done, and I&rsquo;m not sure if people would like it&hellip; so they&rsquo;re going to be some of those user toggleable features.</p>
+<p>Lastly, there are a few features I&rsquo;ve always wanted in a FM that I&rsquo;ve not seen done, and I&rsquo;m not sure if people would like it&hellip; so they&rsquo;re going to be some of those user toggle-able features.</p>
 <ul>
 <li>
 <p>In the left directory panel, where the directories are shown&hellip; also display the folder data size.  That way someone doesn&rsquo;t have to right click and select properties.  To prevent system strain, I&rsquo;d say that we allow a user to set an upper limit&hellip; say 500mb&hellip; and if the folder size is above that it&rsquo;ll just show <code>&gt; 500mb</code>.  If you&rsquo;re having a hard time grasping what I mean, imagine the output of <code>du -sh *</code> for each directory in a folder that you&rsquo;re sitting in, being displayed beside the system folder in the tree panel.</p>
 </li>
 <li>
-<p>Lumina currently doesnt save thumbnails, they&rsquo;re re-generated everytime you enter a directory if they&rsquo;re not in ram.  I&rsquo;d like to enable saving this, but with multiple options.  First being the classic method of saving these in ~/.  I personally hate that this is done, becuase my user folder shouldnt be the storage place for thumbnails. IMHO thumbnails should be where the files are located. Afterall there&rsquo;s no reason each user should have to generate thumbnails for images/videos on a NAS.  But since this is what most people are used to, this should be an option that they can choose.  Second option is to create a <code>.directory</code> where they can be stored.  That way they are rendered once, saved, and always available in that folder.  Move the folder, no problem, thumbnails get moved as well, meaning they never have to be rendered again. Third option is to keep the current in place of Lumina not saving thumbnails anywhere than in memory, though we can change this to /tmp if that&rsquo;s easier code wise considering the other two options.</p>
+<p>Lumina currently doesn&rsquo;t save thumbnails, they&rsquo;re re-generated every time you enter a directory if they&rsquo;re not in ram.  I&rsquo;d like to enable saving this, but with multiple options.  First being the classic method of saving these in ~/.  I personally hate that this is done, because my user folder shouldn&rsquo;t be the storage place for thumbnails. IMHO thumbnails should be where the files are located. After all there&rsquo;s no reason each user should have to generate thumbnails for images/videos on a NAS.  But since this is what most people are used to, this should be an option that they can choose.  Second option is to create a <code>.directory</code> where they can be stored.  That way they are rendered once, saved, and always available in that folder.  Move the folder, no problem, thumbnails get moved as well, meaning they never have to be rendered again. Third option is to keep the current in place of Lumina not saving thumbnails anywhere than in memory, though we can change this to /tmp if that&rsquo;s easier code wise considering the other two options.</p>
 </li>
 <li>
 <p>A longer term feature Id love to have is something similar to slookup baked into the FM itself for file searching, again user toggleable.</p>
@@ -456,9 +456,11 @@ This is work I can do myself, but obviously it&rsquo;s something that someone wi
 </ul>
 <h3 id="lumina-20-window-manager">Lumina 2.0 Window Manager.</h3>
 <p>This is well outside my capabilities, but I do have a secret plan that I&rsquo;ll explain in a bit.  Ken started this work, and in some ways the Window Manager does work.  You can start it, and you can load windows.  But there are bunch of bugs and lots of things not completed.  I haven&rsquo;t looked at this code since probably late 2018, so I&rsquo;m a little fuzy on what state its in.  I do remember Ken saying it was only a &ldquo;Few Months Away&rdquo; from being done.  But at that time he was working on it for a couple hours a day, so&hellip; lets guestimate 100-250 hours of effort left.</p>
-<p>Idealy I could convince him to finish it, so someone else doesn&rsquo;t have the initial uphill battle of figuring out what he finished and what still needs to be worked on.  So here we are at my secret evil plan&hellip; however&hellip; by reading further you have to promise that you will keep this a secret as well.  This is between you&hellip; me&hellip; and the internet.  <a href="https://github.com/lumina-desktop/lumina">I&rsquo;ve turned on sponsorships for the Lumina Project.</a>  All of the money that comes in is being set aside and will continue to grow until such time that there&rsquo;s enough money to actually hire someone to finish this work.</p>
+<p>Ideally I could convince him to finish it, so someone else doesn&rsquo;t have the initial uphill battle of figuring out what he finished and what still needs to be worked on.  So here we are at my secret evil plan&hellip; however&hellip; by reading further you have to promise that you will keep this a secret as well.  This is between you&hellip; me&hellip; and the internet.  <a href="https://github.com/lumina-desktop/lumina">I&rsquo;ve turned on sponsorships for the Lumina Project.</a>  All of the money that comes in is being set aside and will continue to grow until such time that there&rsquo;s enough money to actually hire someone to finish this work.</p>
 <p>Since Ken started it, he&rsquo;s the logical choice, but with work and family life that may not be possible.  However I&rsquo;m sure if the number becomes decent enough I can convince his wife to convince him to do it.  Remember&hellip; Happy Wife&hellip; Happy Life. ;)</p>
-<p>However if I can&rsquo;t convince his wife, then I would at least have the option to hire someone else to work on it.  Or someone could just be a wonderful human being and an awesome open source developer and be interested in tackling a tough challange.</p>
+<p>However if I can&rsquo;t convince his wife, then I would at least have the option to hire someone else to work on it.  Or someone could just be a wonderful human being and an awesome open source developer and be interested in tackling a tough challenge.</p>
+<p>So If you’ve got time and would like to help out, reach out and let me know.  I really would like to make some progress on these items, and it’s going to take some outside help.</p>
+<p>Lastly I, Tom Jones, consent to everyone giving me (Tom Jones) a hard time when they see me because I didn’t know or forgot that I knew that JT was the current developer of Lumina.  Furthermore, as Penance, I also owe JT and the show listeners some BSD poetry in a future BSD Now episode.</p>
 
 
 <footer class=" footline" >
@@ -483,20 +485,20 @@ This is work I can do myself, but obviously it&rsquo;s something that someone wi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1644362341"></script>
-    <script src="/js/perfect-scrollbar.min.js?1644362341"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1644362341"></script>
-    <script src="/js/jquery.sticky.js?1644362341"></script>
-    <script src="/js/featherlight.min.js?1644362341"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1644362341"></script>
-    <script src="/js/highlight.pack.js?1644362341"></script>
+    <script src="/js/clipboard.min.js?1644364016"></script>
+    <script src="/js/perfect-scrollbar.min.js?1644364016"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1644364016"></script>
+    <script src="/js/jquery.sticky.js?1644364016"></script>
+    <script src="/js/featherlight.min.js?1644364016"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1644364016"></script>
+    <script src="/js/highlight.pack.js?1644364016"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1644362341"></script>
-    <script src="/js/learn.js?1644362341"></script>
-    <script src="/js/hugo-learn.js?1644362341"></script>
+    <script src="/js/modernizr.custom.71422.js?1644364016"></script>
+    <script src="/js/learn.js?1644364016"></script>
+    <script src="/js/hugo-learn.js?1644364016"></script>
 
-    <link href="/mermaid/mermaid.css?1644362341" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1644362341"></script>
+    <link href="/mermaid/mermaid.css?1644364016" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1644364016"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
