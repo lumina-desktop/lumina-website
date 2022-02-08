@@ -7,6 +7,7 @@
     --MAIN-LINK-color: #005aff; /* Color of links */
     --MAIN-LINK-HOVER-color: #0757A6; /* Color of hovered links */
     --MAIN-ANCHOR-color: #ececec; /* color of anchors on titles */
+    --grey-body: #333;
 
     --MENU-HEADER-BG-color: transparent; /* Background color of menu header */
     --MENU-HEADER-BORDER-color:#11111190; /*Color of menu header border */ 
@@ -30,12 +31,16 @@
 
 body {
 	color: var(--MAIN-TEXT-color) !important;
-	background-color: var(--MAIN-BG-color);
+	background-color: var(--grey-body);
 }
 
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
     border-color: none;
     box-shadow: none;
+}
+
+h1{
+    color: var(--MAIN-TITLES-TEXT-color) !important;
 }
 
 h2, h3, h4, h5 {

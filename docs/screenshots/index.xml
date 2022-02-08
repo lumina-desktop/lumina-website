@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ken Moore News</title>
+    <title>Ken Moore &amp; JT Pennington News</title>
     <link>https://lumina-desktop.github.io/screenshots/</link>
-    <description>Recent content from Ken Moore</description>
+    <description>Recent content from Ken Moore &amp; JT Pennington</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>(c) 2012-2021 : Ken Moore</copyright>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2022 : JT Pennington</copyright>
     
         <atom:link href="https://lumina-desktop.github.io/screenshots/index.xml" rel="self" type="application/rss+xml" />
     
