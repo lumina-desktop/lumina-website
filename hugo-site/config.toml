@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Lumina Desktop Environment"
 theme = "hugo-theme-learn"
-copyright = "(c) 2012-2021 : Ken Moore & (c) 2021-2022 : JT Pennington"
+copyright = "(c) 2012-2021 : Ken Moore & (c) 2021-2024 : JT Pennington"
 
 
 [author]
