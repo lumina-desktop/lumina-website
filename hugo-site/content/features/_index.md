@@ -8,7 +8,7 @@ pre = "<i class='fa fa-desktop'></i>	"
 +++
 
 The Lumina® desktop is designed to be fast, customizable, flexible, and lightweight. Lumina® works great in multi-monitor configurations and with high-resolution monitors (4K+) as well as single-screen configurations on laptops or tablets.
-Lumina is designed to work out-of-box without end user apps, and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.
+Lumina is designed to work out-of-box without end-user apps and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL, or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.
 
 ## Desktop Features
 
@@ -32,15 +32,15 @@ Quickly and easily change your display and theming settings using the Lumina® c
    * Customize the right-click desktop context menu
       * Shortcuts to any/all applications
       * Launch basic apps (default terminal or file manager)
-      * Provide a task manager for the true desktop-minimalists
+      * Provide a task manager for the true desktop minimalists
       * Provide a way to run user-created "menu scripts" to dynamically generate new types of context menu items.
 
 ### Fast and Responsive
-Lumina® is extremely minimal and can be used on systems with as little as 1GB of memory. It is very self-contained and does not require any particular utilities or libraries aside from very small handful.
-Lumina is designed around the concept of complete modularity. Your applications are completely independant from the desktop itself and can be added/removed at will without loss of functionality.
+Lumina® is extremely minimal and can be used on systems with as little as 1GB of memory. It is very self-contained and does not require any particular utilities or libraries aside from very a small handful.
+Lumina is designed around the concept of complete modularity. Your applications are completely independent from the desktop itself and can be added/removed at will without loss of functionality.
 
 ## Optional Stand-Alone Utilities
-There are many utilities that are developed alongside the Lumina desktop to ensure that a full-range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.
+There are many utilities that are developed alongside the Lumina desktop to ensure that a full range of functionality is available if nothing other than the Lumina desktop and utilities are installed. Each of these utilities is available independently of the desktop and can be built or used as a separate stand-alone utility on other desktops or operating systems as desired. These utilities may have special integration options when used in conjunction with the Lumina desktop however.
 
 ### Insight File Manager
 
@@ -70,7 +70,7 @@ Extract or compress files with the Lumina Archiver (`lumina-archiver` on the com
 * Integrated into the Insight file manager menu options for quick access.
 
 ### Scientific Calculator
-Simple and Scientific calculation provided with Lumina Calculator (`lumina-calculator` on the command line).
+Simple and Scientific calculations are provided by Lumina Calculator (`lumina-calculator` on the command line).
 
 * Works with a keyboard numpad.
 * Calculator history can be saved as a text document.
@@ -80,7 +80,7 @@ Simple and Scientific calculation provided with Lumina Calculator (`lumina-calcu
 
 ![Lumina Text Editor](/images/text-editor.png?width=20pc)
 
-Simple text editing provided by Lumina Text Editor (`lumina-textedit` or `lte` on the command line).
+Simple text editing is provided by Lumina Text Editor (`lumina-textedit` or `lte` on the command line).
 
 * Plaintext editor supporting variable fonts and font sizes.
 * Customizable display supports showing line numbers, syntax highlighting, and dynamic word wrapping.
@@ -91,7 +91,7 @@ Simple text editing provided by Lumina Text Editor (`lumina-textedit` or `lte` o
 
 ![Lumina Media Player](/images/player-pandora.png?width=20pc)
 
-Local file playlist and Pandora radio streaming provided by the Lumina Media Player (`lumina-mediaplayer` on the command line).
+Local file playing and Pandora radio streaming is provided by the Lumina Media Player (`lumina-mediaplayer` on the command line).
 
 * Create playlists of local multimedia files (audio and video)
 * Stream music from the Pandora radio streaming service (USA only)
@@ -112,7 +112,7 @@ View PDF files and use them to give presentations easily with the Lumina PDF Vie
 
 * View/Print PDF files. Also includes support for some PDF annotations such as table of contents, hyperlinks, and more!
 * Multiple viewing options, such as full-width, full-page, two-column, and grid mode!
-* Presentation mode with multi-monitor awareness. Also includes a presentation timer on the main screen for making sure you don't run over time!
+* Presentation mode with multi-monitor awareness. Also includes a presentation timer on the main screen to make sure you don't run over time!
 
 
 ### Multi-Monitor Management
