@@ -1,9 +1,10 @@
 +++
 title = "Home"
-MenuTitle = "Home"
+linkTitle = "Home"
 chapter = false
 weight = 5
 pre = ""
+description = "Lumina desktop environment project page"
 +++
 
 {{< banner "Lumina_Banner_Gold.png" >}}

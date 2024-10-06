@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frequently Asked Questions :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/faq/index.html</link>
+    <description>How is it different from other desktop environments? Originally designed to work best with TrueOS® and Project Trident®, but specifically works very well for the BSD community at large. Lumina® can also be easily ported to any OS, including Linux distros). Does not require any of the commonly used desktop implementation frameworks (DBUS, policykit, consolekit, systemd, HALD, etc..). Does not come bundled with any “end-user” applications (web browsers, email clients, multimedia software, office suites, etc.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="http://localhost:45831/faq/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

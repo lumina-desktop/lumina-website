@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features of Lumina :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/features/index.html</link>
+    <description>The Lumina® desktop is designed to be fast, customizable, flexible, and lightweight. Lumina® works great in multi-monitor configurations and with high-resolution monitors (4K+) as well as single-screen configurations on laptops or tablets. Lumina is designed to work out-of-box without end-user apps and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL, or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="http://localhost:45831/features/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

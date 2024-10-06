@@ -1,6 +1,6 @@
 +++
 title = "Screenshots"
-MenuTitle = "Screenshots"
+linkTitle = "Screenshots"
 chapter = false
 weight = 2
 draft = false

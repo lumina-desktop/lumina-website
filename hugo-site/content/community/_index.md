@@ -1,6 +1,6 @@
 +++
 title = "Community Resources"
-MenuTitle = "Community"
+linkTitle = "Community"
 chapter = false
 weight = 2
 draft = false

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screenshots :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/screenshots/index.html</link>
+    <description>Want to know what Lumina® looks like in action? Here are some recent versions of the Lumina desktop, running with a number of different widgets and layouts.&#xA;Lumina 1.6.1&#xA;Lumina 1.6.0&#xA;Lumina 1.4.0&#xA;Lumina 1.3.0&#xA;Lumina 0.8.3</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="http://localhost:45831/screenshots/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community Resources :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/community/index.html</link>
+    <description>Themes! There is a community repository for providing new theme files, color schemes, wallpapers, and more! This repository is available on GitHub and contains all the instructions necessary to help you get started.&#xA;Get Involved! If you are a C++/Qt developer, there are tons of areas where you could contribute! Finding/fixing bugs Writing new interface plugins Adding functionality to existing plugins and more! If you are a CSS developer, then you might be interested in making new themes for Lumina® (using QSS: it is very similar to CSS but specifically for Qt applications/widgets).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="http://localhost:45831/community/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

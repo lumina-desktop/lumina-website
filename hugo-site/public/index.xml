@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/index.html</link>
+    <description>Lumina desktop environment project page</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:45831/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Features of Lumina</title>
+      <link>http://localhost:45831/features/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/features/index.html</guid>
+      <description>The Lumina® desktop is designed to be fast, customizable, flexible, and lightweight. Lumina® works great in multi-monitor configurations and with high-resolution monitors (4K+) as well as single-screen configurations on laptops or tablets. Lumina is designed to work out-of-box without end-user apps and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL, or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.</description>
+    </item>
+    <item>
+      <title>Releases</title>
+      <link>http://localhost:45831/releases/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/releases/index.html</guid>
+      <description>Sources All of the sources for release versions of the Lumina desktop and its suite of utilities are available for download on the GitHub repository.&#xA;Pre-built Packages Pre-built packages of the Lumina desktop and its utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:&#xA;BSD Operating Systems FreeBSD OpenBSD DragonflyBSD Linux Distributions Debian Void Gentoo Arch Probably a lot of others… </description>
+    </item>
+    <item>
+      <title>Community Resources</title>
+      <link>http://localhost:45831/community/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/community/index.html</guid>
+      <description>Themes! There is a community repository for providing new theme files, color schemes, wallpapers, and more! This repository is available on GitHub and contains all the instructions necessary to help you get started.&#xA;Get Involved! If you are a C++/Qt developer, there are tons of areas where you could contribute! Finding/fixing bugs Writing new interface plugins Adding functionality to existing plugins and more! If you are a CSS developer, then you might be interested in making new themes for Lumina® (using QSS: it is very similar to CSS but specifically for Qt applications/widgets).</description>
+    </item>
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>http://localhost:45831/faq/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/faq/index.html</guid>
+      <description>How is it different from other desktop environments? Originally designed to work best with TrueOS® and Project Trident®, but specifically works very well for the BSD community at large. Lumina® can also be easily ported to any OS, including Linux distros). Does not require any of the commonly used desktop implementation frameworks (DBUS, policykit, consolekit, systemd, HALD, etc..). Does not come bundled with any “end-user” applications (web browsers, email clients, multimedia software, office suites, etc.</description>
+    </item>
+    <item>
+      <title>Screenshots</title>
+      <link>http://localhost:45831/screenshots/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/screenshots/index.html</guid>
+      <description>Want to know what Lumina® looks like in action? Here are some recent versions of the Lumina desktop, running with a number of different widgets and layouts.&#xA;Lumina 1.6.1&#xA;Lumina 1.6.0&#xA;Lumina 1.4.0&#xA;Lumina 1.3.0&#xA;Lumina 0.8.3</description>
+    </item>
+    <item>
+      <title>Random Journal Entries</title>
+      <link>http://localhost:45831/post/index.html</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:45831/post/index.html</guid>
+      <description>This is a collections of random thoughts, ideas, or general ramblings.&#xA;All Journal Entries: Newest first Help requested for three big items for Lumina 2022-02-08&#xA;In this post I mentioned some of the major work that is on the road map for Lumina, and I’ve finally made the time to expand on this a little more. In this post, I’m going to cover three of the big-ticket items I need help with.</description>
+    </item>
+  </channel>
+</rss>

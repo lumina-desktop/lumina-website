@@ -1,0 +1,34 @@
+#baseURL = "lumina-desktop.github.io/lumina-website"
+languageCode = 'en-us'
+title = 'Lumina Desktop Environment'
+copyright = '(c) 2012-2021 : Ken Moore & (c) 2021-2024 : JT Pennington'
+
+
+theme = 'hugo-theme-relearn'
+
+[params]
+
+ editURL = 'https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/'
+ copyrightyear = '2012-2024'
+
+
+showVisitedLinks = false
+disableSearch = false
+disableAssetsBusting = false
+disableInlineCopyToClipBoard = false
+disableShortcutsTitle = true
+disableLanguageSwitchingButton = false
+ordersectionsby = 'weight'
+
+[[params.themeVariant]]
+   identifier = 'mine'
+
+
+[params.author]
+    name = 'Ken Moore & JT Pennington'
+
+[params.social]
+    github = 'https://github.com/lumina-desktop'
+    telegram = 'https://t.me/luminadesktop'
+
+
