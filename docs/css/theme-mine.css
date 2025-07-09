@@ -1,6 +1,8 @@
 
 :root{
     
+    --CODE-theme: relearn-light;
+    
     --MAIN-TEXT-color: #ececec; /* Color of text by default */
     --MAIN-BG-color: #607d8b; /* Color of main pages */
     --MAIN-TITLES-TEXT-color: #ececec; /* Color of titles h2-h3-h4-h5 */

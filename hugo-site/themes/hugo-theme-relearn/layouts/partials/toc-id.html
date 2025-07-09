@@ -2,9 +2,9 @@
   {{- $lastCapital := "" }}
   {{- $pages := slice }}
   {{- if eq .Kind "taxonomy" }}
-    {{- $pages = partialCached "partials/pageHelper/taxonomyPages.html" . . }}
+    {{- $pages = partialCached "pageHelper/taxonomyPages.html" . . }}
   {{- else if eq .Kind "term" }}
-    {{- $pages = partialCached "partials/pageHelper/termPages.html" . . }}
+    {{- $pages = partialCached "pageHelper/termPages.html" . . }}
   {{- end }}
   {{- $toc_pages := "" }}
   {{- range $pages }}

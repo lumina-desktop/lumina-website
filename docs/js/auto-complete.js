@@ -1,5 +1,19 @@
 /*
-    JavaScript autoComplete v1.0.4
+    JavaScript autoComplete v1.0.4+
+        McShelby/hugo-theme-relearn#155
+            - PR #46, PR #75: introducing selectorToInsert and anchor to it
+            - sticky dropdown on scrolling
+        McShelby/hugo-theme-relearn#387
+            - don't empty search input if no data-val is given
+            - don't delete search term but close suggestions when suggestions are open
+            - delete search term when suggestions are closed
+        McShelby/hugo-theme-relearn#452
+            - register focus event ignoring minChars because that doesn't make sense
+        McShelby/hugo-theme-relearn#452
+            - on ESC, close overlay without deleting search term if overlay is open
+            - on ESC, delete search term if overlay is closed
+            - on UP, preventDefault to keep cursor in position
+
     Copyright (c) 2014 Simon Steinberger / Pixabay
     GitHub: https://github.com/Pixabay/JavaScript-autoComplete
     License: http://www.opensource.org/licenses/mit-license.php
@@ -17,7 +31,6 @@ var autoComplete = (function(){
             if (el.attachEvent) el.attachEvent('on'+type, handler); else el.addEventListener(type, handler);
         }
         function removeEvent(el, type, handler){
-            // if (el.removeEventListener) not working in IE11
             if (el.detachEvent) el.detachEvent('on'+type, handler); else el.removeEventListener(type, handler);
         }
         function live(elClass, event, cb, context){
@@ -37,6 +50,7 @@ var autoComplete = (function(){
             offsetTop: 1,
             cache: 1,
             menuClass: '',
+            selectorToInsert: 0,
             renderItem: function (item, search){
                 // escape special characters
                 search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
@@ -61,11 +75,27 @@ var autoComplete = (function(){
             that.cache = {};
             that.last_val = '';
 
-            that.updateSC = function(resize, next){
+			var parentElement;
+            if (typeof o.selectorToInsert === "string" && document.querySelector(o.selectorToInsert) instanceof HTMLElement) {
+				parentElement = document.querySelector(o.selectorToInsert);
+			}
+			that.updateSC = function(resize, next){
                 var rect = that.getBoundingClientRect();
-                that.sc.style.left = Math.round(rect.left + (window.pageXOffset || document.documentElement.scrollLeft) + o.offsetLeft) + 'px';
-                that.sc.style.top = Math.round(rect.bottom + (window.pageYOffset || document.documentElement.scrollTop) + o.offsetTop) + 'px';
-                that.sc.style.width = Math.round(rect.right - rect.left) + 'px'; // outerWidth
+				var parentOffsetLeft = 0;
+                var parentOffsetTop = 0;
+                var pageXOffset = 0;
+                var pageYOffset = 0;
+                if (parentElement != false) {
+                    parentOffsetLeft = parentElement.getBoundingClientRect().left;
+                    parentOffsetTop = parentElement.getBoundingClientRect().top;
+                } else {
+                    pageXOffset = window.pageXOffset || document.documentElement.scrollLeft;
+                    pageYOffset = window.pageYOffset || document.documentElement.scrollTop;
+                }
+                // Is this really the job of the tool or should it be defered to the user?
+                // that.sc.style.left = Math.round(rect.left + pageXOffset + o.offsetLeft - parentOffsetLeft) + 'px';
+                // that.sc.style.top = Math.round(rect.bottom + pageYOffset + o.offsetTop - parentOffsetTop) + 'px';
+                // that.sc.style.width = Math.round(rect.right - rect.left) + 'px'; // outerWidth
                 if (!resize) {
                     that.sc.style.display = 'block';
                     if (!that.sc.maxHeight) { that.sc.maxHeight = parseInt((window.getComputedStyle ? getComputedStyle(that.sc, null) : that.sc.currentStyle).maxHeight); }
@@ -82,7 +112,12 @@ var autoComplete = (function(){
                 }
             }
             addEvent(window, 'resize', that.updateSC);
-            document.body.appendChild(that.sc);
+
+            if (typeof o.selectorToInsert === "string" && document.querySelector(o.selectorToInsert) instanceof HTMLElement) {
+                document.querySelector(o.selectorToInsert).appendChild(that.sc);
+            } else {
+                document.body.appendChild(that.sc);
+            }
 
             live('autocomplete-suggestion', 'mouseleave', function(e){
                 var sel = that.sc.querySelector('.autocomplete-suggestion.selected');
@@ -131,26 +166,47 @@ var autoComplete = (function(){
                 var key = window.event ? e.keyCode : e.which;
                 // down (40), up (38)
                 if ((key == 40 || key == 38) && that.sc.innerHTML) {
+                    e.preventDefault();
                     var next, sel = that.sc.querySelector('.autocomplete-suggestion.selected');
                     if (!sel) {
                         next = (key == 40) ? that.sc.querySelector('.autocomplete-suggestion') : that.sc.childNodes[that.sc.childNodes.length - 1]; // first : last
                         next.className += ' selected';
-                        console.log(next);
-                        that.value = next.getAttribute('data-val');
+                        if (next.getAttribute('data-val')) that.value = next.getAttribute('data-val');
                     } else {
                         next = (key == 40) ? sel.nextSibling : sel.previousSibling;
                         if (next) {
                             sel.className = sel.className.replace('selected', '');
                             next.className += ' selected';
-                            that.value = next.getAttribute('data-val');
+                            if (next.getAttribute('data-val')) that.value = next.getAttribute('data-val');
                         }
-                        else { sel.className = sel.className.replace('selected', ''); that.value = that.last_val; next = 0; }
+                        else {
+                            sel.className = sel.className.replace('selected', '');
+                            that.value = that.last_val;
+                            next = 0;
+                        }
                     }
                     that.updateSC(0, next);
                     return false;
                 }
                 // esc
-                else if (key == 27) { that.value = that.last_val; that.sc.style.display = 'none'; }
+                else if (key == 27) {
+                    if (that.sc.style.display != 'none') {
+                        // just close the overlay if it's open, and prevent other listeners
+                        // from recognizing it; this is not for you!
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        that.sc.style.display = 'none';
+                        var sel = that.sc.querySelector('.autocomplete-suggestion.selected');
+                        if (sel) {
+                            that.focus();
+                        }
+                    }
+                    else {
+                        // if no overlay is open, we want to remove the search term and also
+                        // want other listeners to recognize it
+                        that.value = '';
+                    }
+                }
                 // enter
                 else if (key == 13 || key == 9) {
                     var sel = that.sc.querySelector('.autocomplete-suggestion.selected');
@@ -189,7 +245,7 @@ var autoComplete = (function(){
                 that.last_val = '\n';
                 that.keyupHandler(e)
             };
-            if (!o.minChars) addEvent(that, 'focus', that.focusHandler);
+            addEvent(that, 'focus', that.focusHandler);
         }
 
         // public destroy method
@@ -205,7 +261,16 @@ var autoComplete = (function(){
                     that.setAttribute('autocomplete', that.autocompleteAttr);
                 else
                     that.removeAttribute('autocomplete');
-                document.body.removeChild(that.sc);
+                try {
+                    if (o.selectorToInsert && document.querySelector(o.selectorToInsert).contains(that.sc)) {
+                        document.querySelector(o.selectorToInsert).removeChild(that.sc);
+                    } else {
+                        document.body.removeChild(that.sc);
+                    }
+                } catch (error) {
+                    console.log('Destroying error: can\'t find target selector', error);
+                    throw error;
+                }
                 that = null;
             }
         };

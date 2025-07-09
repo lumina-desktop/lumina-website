@@ -1,73 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lumina-desktop.github.io/features/</loc>
+    <loc>https://lumina-desktop.github.io/features/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/releases/</loc>
+    <loc>https://lumina-desktop.github.io/releases/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/community/</loc>
+    <loc>https://lumina-desktop.github.io/community/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/faq/</loc>
+    <loc>https://lumina-desktop.github.io/faq/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/screenshots/</loc>
+    <loc>https://lumina-desktop.github.io/screenshots/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/</loc>
+    <loc>https://lumina-desktop.github.io/index.html</loc>
     <lastmod>2022-02-08T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/</loc>
+    <loc>https://lumina-desktop.github.io/post/index.html</loc>
     <lastmod>2022-02-08T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/2022-02-08/</loc>
+    <loc>https://lumina-desktop.github.io/post/2022-02-08/index.html</loc>
     <lastmod>2022-02-08T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/2021-12-25/</loc>
+    <loc>https://lumina-desktop.github.io/post/2021-12-25/index.html</loc>
     <lastmod>2021-12-25T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/2021-10-05/</loc>
+    <loc>https://lumina-desktop.github.io/post/2021-10-05/index.html</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/2021-07-01/</loc>
+    <loc>https://lumina-desktop.github.io/post/2021-07-01/index.html</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/post/2021-06-23/</loc>
+    <loc>https://lumina-desktop.github.io/post/2021-06-23/index.html</loc>
     <lastmod>2021-06-23T00:00:00+00:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/404/</loc>
-    <priority>0</priority>
+    <loc>https://lumina-desktop.github.io/categories/index.html</loc>
   </url>
-  
   <url>
-    <loc>https://lumina-desktop.github.io/categories/</loc>
+    <loc>https://lumina-desktop.github.io/tags/index.html</loc>
   </url>
-  
-  <url>
-    <loc>https://lumina-desktop.github.io/tags/</loc>
-  </url>
-  
 </urlset>

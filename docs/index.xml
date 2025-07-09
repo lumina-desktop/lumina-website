@@ -1,17 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ken Moore &amp; JT Pennington News</title>
-    <link>https://lumina-desktop.github.io/</link>
-    <description>Recent content from Ken Moore &amp; JT Pennington</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Home :: Lumina Desktop Environment</title>
+    <link>https://lumina-desktop.github.io/index.html</link>
+    <description>Lumina desktop environment project page</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2022 : JT Pennington</copyright>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
     <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://lumina-desktop.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-    
+    <atom:link href="https://lumina-desktop.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Features of Lumina</title>
+      <link>https://lumina-desktop.github.io/features/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/features/index.html</guid>
+      <description>The Lumina® desktop is designed to be fast, customizable, flexible, and lightweight. Lumina® works great in multi-monitor configurations and with high-resolution monitors (4K+) as well as single-screen configurations on laptops or tablets. Lumina is designed to work out-of-box without end-user apps and requires fewer dependencies than most other desktop environments. The Lumina® desktop does not require PolicyKit, HAL, or systemd. This makes Lumina® very portable and the desktop can be run on most flavors of BSD and GNU/Linux.</description>
+    </item>
+    <item>
+      <title>Releases</title>
+      <link>https://lumina-desktop.github.io/releases/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/releases/index.html</guid>
+      <description>Sources All of the sources for release versions of the Lumina desktop and its suite of utilities are available for download on the GitHub repository.&#xA;Pre-built Packages Pre-built packages of the Lumina desktop and its utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:&#xA;BSD Operating Systems FreeBSD OpenBSD DragonflyBSD Linux Distributions Debian Void Gentoo Arch Probably a lot of others…</description>
+    </item>
+    <item>
+      <title>Community Resources</title>
+      <link>https://lumina-desktop.github.io/community/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/community/index.html</guid>
+      <description>Themes! There is a community repository for providing new theme files, color schemes, wallpapers, and more! This repository is available on GitHub and contains all the instructions necessary to help you get started.&#xA;Get Involved! If you are a C++/Qt developer, there are tons of areas where you could contribute! Finding/fixing bugs Writing new interface plugins Adding functionality to existing plugins and more! If you are a CSS developer, then you might be interested in making new themes for Lumina® (using QSS: it is very similar to CSS but specifically for Qt applications/widgets). These themes can be created/modified directly within the Lumina® theme engine utility and get applied to all Qt5-based applications. This website! This website is a simple one created using the “Hugo” static-site generator. All of the sources for this site are managed and run from our repository on GitHub and changes are always welcome! If you found a bug or have an idea for a cool new feature, you can post bug reports or feature requests on our GitHub repository.</description>
+    </item>
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://lumina-desktop.github.io/faq/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/faq/index.html</guid>
+      <description>How is it different from other desktop environments? Originally designed to work best with TrueOS® and Project Trident®, but specifically works very well for the BSD community at large. Lumina® can also be easily ported to any OS, including Linux distros). Does not require any of the commonly used desktop implementation frameworks (DBUS, policykit, consolekit, systemd, HALD, etc..). Does not come bundled with any “end-user” applications (web browsers, email clients, multimedia software, office suites, etc..). The only utilities that Lumina brings to the table by default are the ones written specifically for the project and are generally for background/utilitarian functionality (the largest utility is the file manager). Simple text-based configuration file for setting system-wide defaults for new users. This allows distributors of the desktop to easily pre-set the system defaults/interface so it just works for the end user. Plugin-based interface design. This allows the user to make the desktop as light/heavy as desired (within reason) simply by choosing which plugins to have running on their desktop/panels. Designed to function as a general-purpose system interface – easily pre-configured to run on any type/size of device or screen. See the features page for additional details. What operating systems is it available for? Lumina is highly portable and should work on any Unix-like operating system, with a single OS-compatibility class for porters to check/update as necessary. It has already been ported to all the various BSD operating systems, as well as many of the Linux distributions.</description>
+    </item>
+    <item>
+      <title>Screenshots</title>
+      <link>https://lumina-desktop.github.io/screenshots/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/screenshots/index.html</guid>
+      <description>Want to know what Lumina® looks like in action? Here are some recent versions of the Lumina desktop, running with a number of different widgets and layouts.&#xA;Lumina 1.6.1&#xA;Lumina 1.6.0</description>
+    </item>
+    <item>
+      <title>Random Journal Entries</title>
+      <link>https://lumina-desktop.github.io/post/index.html</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://lumina-desktop.github.io/post/index.html</guid>
+      <description>This is a collections of random thoughts, ideas, or general ramblings.&#xA;All Journal Entries: Newest first Help requested for three big items for Lumina 2022-02-08&#xA;In this post I mentioned some of the major work that is on the road map for Lumina, and I’ve finally made the time to expand on this a little more.&#xA;In this post, I’m going to cover three of the big-ticket items I need help with.</description>
+    </item>
   </channel>
 </rss>

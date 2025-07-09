@@ -1,14 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ken Moore &amp; JT Pennington News</title>
-    <link>https://lumina-desktop.github.io/screenshots/</link>
-    <description>Recent content from Ken Moore &amp; JT Pennington</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Screenshots :: Lumina Desktop Environment</title>
+    <link>https://lumina-desktop.github.io/screenshots/index.html</link>
+    <description>Want to know what Lumina® looks like in action? Here are some recent versions of the Lumina desktop, running with a number of different widgets and layouts.&#xA;Lumina 1.6.1&#xA;Lumina 1.6.0</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2022 : JT Pennington</copyright>
-    
-        <atom:link href="https://lumina-desktop.github.io/screenshots/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="https://lumina-desktop.github.io/screenshots/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
