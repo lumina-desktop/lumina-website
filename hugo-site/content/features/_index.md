@@ -1,6 +1,6 @@
 +++
 title = "Features of Lumina"
-MenuTitle = "Features"
+linkTitle = "Features"
 chapter = false
 weight = 1
 draft = false

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Releases :: Lumina Desktop Environment</title>
+    <link>http://localhost:45831/releases/index.html</link>
+    <description>Sources All of the sources for release versions of the Lumina desktop and its suite of utilities are available for download on the GitHub repository.&#xA;Pre-built Packages Pre-built packages of the Lumina desktop and its utilities are available on many other operating systems. While we cannot list them all, the ones that we know of are:&#xA;BSD Operating Systems FreeBSD OpenBSD DragonflyBSD Linux Distributions Debian Void Gentoo Arch Probably a lot of others… </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
+    <atom:link href="http://localhost:45831/releases/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

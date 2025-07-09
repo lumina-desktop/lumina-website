@@ -1,6 +1,6 @@
 +++
 title = "Releases"
-MenuTitle = "Releases"
+linkTitle = "Releases"
 chapter = false
 weight = 1
 draft = false

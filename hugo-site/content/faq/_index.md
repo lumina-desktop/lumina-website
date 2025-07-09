@@ -1,6 +1,6 @@
 +++
 title = "Frequently Asked Questions"
-MenuTitle = "FAQ"
+linkTitle = "FAQ"
 chapter = false
 weight = 2
 draft = false

@@ -1,6 +1,6 @@
 +++
 title = "Random Journal Entries"
-menutitle = "Journal"
+linkTitle = "Journal"
 chapter = false
 weight = 10
 pre = "<i class='fa fa-rss'></i>	"

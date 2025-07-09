@@ -1,6 +1,6 @@
 +++
 title = "Handbook"
-MenuTitle = "Handbook"
+linkTitle = "Handbook"
 chapter = false
 weight = 5
 draft = true
