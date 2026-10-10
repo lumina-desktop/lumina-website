@@ -1,7 +1,7 @@
-#baseURL = "lumina-desktop.github.io/lumina-website"
+baseURL = 'https://lumina-desktop.org/'
 languageCode = 'en-us'
 title = 'Lumina Desktop Environment'
-copyright = '(c) 2012-2021 : Ken Moore & (c) 2021-2024 : JT Pennington'
+copyright = '(c) 2012-2021 : Ken Moore & (c) 2021-2026 : JT Pennington'
 
 
 theme = 'hugo-theme-relearn'
@@ -9,7 +9,7 @@ theme = 'hugo-theme-relearn'
 [params]
 
  editURL = 'https://github.com/lumina-desktop/lumina-website/tree/master/hugo-site/content/'
- copyrightyear = '2012-2024'
+ copyrightyear = '2012-2026'
 
 
 showVisitedLinks = false
