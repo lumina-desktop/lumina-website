@@ -2,12 +2,12 @@
 
 <ul class="social_icons">
     
-    {{if .Site.Params.twitch}}<li><a href="{{ .Site.Params.twitch }}" alt="" target="_blank"><i class="fa fa-twitch"></i></a></li>{{end}}
-    {{if .Site.Params.twitter}}<li><a href="{{ .Site.Params.twitter }}" alt="" target="_blank"><i class="fa fa-twitter"></i></a></li>{{end}}
-    {{if .Site.Params.youtube}}<li><a href="{{ .Site.Params.youtube }}" alt="" target="_blank"><i class="fa fa-youtube"></i></a></li>{{end}}
-    <li> <a href="https://github.com/lumina-desktop" alt="" target="_blank"><i class="fa-brands fa-github"></i></a></li> 
-    <li><a href="https://t.me/luminadesktop" alt="" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
-    <li><a href="/index.xml" alt="" target="_blank"><i class="fa-solid fa-square-rss"></i></a></li>
+    {{if .Site.Params.twitch}}<li><a href="{{ .Site.Params.twitch }}" aria-label="Twitch" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>{{end}}
+    {{if .Site.Params.twitter}}<li><a href="{{ .Site.Params.twitter }}" aria-label="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{{end}}
+    {{if .Site.Params.youtube}}<li><a href="{{ .Site.Params.youtube }}" aria-label="YouTube" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>{{end}}
+    <li> <a href="https://github.com/lumina-desktop" aria-label="Lumina on GitHub" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://t.me/luminadesktop" aria-label="Lumina on Telegram" target="_blank"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a></li>
+    <li><a href="/index.xml" aria-label="Lumina RSS feed" target="_blank"><i class="fa-solid fa-square-rss" aria-hidden="true"></i></a></li>
 
 </ul>
 <hr>

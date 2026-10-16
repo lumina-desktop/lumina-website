@@ -1,0 +1,17 @@
+# Hugo default output directory
+/public/
+
+# Hugo build cache / generated resources
+/resources/_gen/
+
+# Assets build configurations and stats
+/assets/jsconfig.json
+hugo_stats.json
+
+# Locally downloaded Hugo executables (if any)
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file created during builds
+/.hugo_build.lock
