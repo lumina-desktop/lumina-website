@@ -3,7 +3,7 @@
   <channel>
     <title>Random Journal Entries :: Lumina Desktop Environment</title>
     <link>https://lumina-desktop.org/post/index.html</link>
-    <description>This is a collections of random thoughts, ideas, or general ramblings.&#xA;All Journal Entries: Newest first Help requested for three big items for Lumina 2022-02-08&#xA;In this post I mentioned some of the major work that is on the road map for Lumina, and I’ve finally made the time to expand on this a little more. In this post, I’m going to cover three of the big-ticket items I need help with.</description>
+    <description>This is a collections of random thoughts, ideas, or general ramblings.&#xA;All Journal Entries: Newest first Help requested for three big items for Lumina 2022-02-08&#xA;In this post I mentioned some of the major work that is on the road map for Lumina, and I’ve finally made the time to expand on this a little more. In this post, I’m going to cover three of the big-ticket items I need help with. However, before I get into that, a few points worth mentioning. C++/Qt experience is a definite requirement. It’s not that I have anything against Python or Go, but Lumina is written with C++/Qt, so that’s what you’ll need to know. Along with that, you will need to be willing to submit your code contributions under a BSD 3-Clause. ... Lumina 1.6.2 released. 2021-12-25</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2026 : JT Pennington</copyright>

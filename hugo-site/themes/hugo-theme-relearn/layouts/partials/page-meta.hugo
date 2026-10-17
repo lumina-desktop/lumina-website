@@ -1,11 +1,11 @@
 {{- $currentNode := . }}
 {{- $forceContent := $currentNode.WordCount }}
-{{- $currentNode.Scratch.Delete "relearnIsSelfFound"  }}
-{{- $currentNode.Scratch.Delete "relearnPrevPage"     }}
-{{- $currentNode.Scratch.Delete "relearnNextPage"     }}
-{{- $currentNode.Scratch.Delete "relearnIsHiddenNode" }}{{/* the node itself is flagged as hidden */}}
-{{- $currentNode.Scratch.Delete "relearnIsHiddenStem" }}{{/* the node or one of its parents is flagged as hidden */}}
-{{- $currentNode.Scratch.Delete "relearnIsHiddenFrom" }}{{/* the node is hidden from the current page */}}
+{{- $currentNode.Store.Delete "relearnIsSelfFound"  }}
+{{- $currentNode.Store.Delete "relearnPrevPage"     }}
+{{- $currentNode.Store.Delete "relearnNextPage"     }}
+{{- $currentNode.Store.Delete "relearnIsHiddenNode" }}{{/* the node itself is flagged as hidden */}}
+{{- $currentNode.Store.Delete "relearnIsHiddenStem" }}{{/* the node or one of its parents is flagged as hidden */}}
+{{- $currentNode.Store.Delete "relearnIsHiddenFrom" }}{{/* the node is hidden from the current page */}}
 {{- range $currentNode.Site.Params.relearn.dependencies }}
 	{{- $has := printf "has%s" .name }}
 	{{- $disable := printf "disable%s" .name }}
@@ -15,9 +15,9 @@
 	{{- end }}
 {{- end }}
 {{- template "relearn-structure" dict "node" .Site.Home "currentnode" $currentNode "hiddenstem" false "hiddencurrent" false }}
-{{- if not ($currentNode.Scratch.Get "relearnIsSelfFound") }}
+{{- if not ($currentNode.Store.Get "relearnIsSelfFound") }}
 	{{- if not $currentNode.IsHome }}
-		{{- $currentNode.Scratch.Set "relearnPrevPage" .Site.Home }}
+		{{- $currentNode.Store.Set "relearnPrevPage" .Site.Home }}
 	{{- end }}
 {{- end }}
 
@@ -29,9 +29,9 @@
 	{{- $isOther := and (not $isDescendant) (not $isSelf) (not $isAncestor) }}
 	{{- $isChildren := eq $currentNode .node.Parent }}
 	{{- if $isSelf }}
-		{{- $currentNode.Scratch.Set "relearnIsSelfFound" true }}
+		{{- $currentNode.Store.Set "relearnIsSelfFound" true }}
 	{{- end }}
-	{{- $isSelfFound := eq ($currentNode.Scratch.Get "relearnIsSelfFound") true }}
+	{{- $isSelfFound := eq ($currentNode.Store.Get "relearnIsSelfFound") true }}
 	{{- $isPreSelf := and (not $isSelfFound) (not $isSelf) }}
 	{{- $isPostSelf := and ($isSelfFound) (not $isSelf) }}
 
@@ -40,17 +40,17 @@
 	{{- $hidden_current_stem := or $hidden_node .hiddencurrent }}
 	{{- $hidden_from_current := or (and $hidden_node (not $isAncestor) (not $isSelf) ) (and .hiddencurrent (or $isPreSelf $isPostSelf $isDescendant) ) }}
 	{{- if $isSelf }}
-		{{- $currentNode.Scratch.Set "relearnIsHiddenNode" $hidden_node }}
-		{{- $currentNode.Scratch.Set "relearnIsHiddenStem" $hidden_stem }}
+		{{- $currentNode.Store.Set "relearnIsHiddenNode" $hidden_node }}
+		{{- $currentNode.Store.Set "relearnIsHiddenStem" $hidden_stem }}
 	{{- end }}
-	{{- $currentNode.Scratch.SetInMap "relearnIsHiddenFrom" .node.RelPermalink $hidden_current_stem }}
+	{{- $currentNode.Store.SetInMap "relearnIsHiddenFrom" .node.RelPermalink $hidden_current_stem }}
 
 	{{- if or (eq $currentNode.Kind "home") (eq $currentNode.Kind "section") (eq $currentNode.Kind "page") }}
 		{{- if not $hidden_from_current }}
 			{{- if and $isPreSelf .node.RelPermalink }}
-				{{- $currentNode.Scratch.Set "relearnPrevPage" .node }}
-			{{- else if and $isPostSelf .node.RelPermalink (eq ($currentNode.Scratch.Get "relearnNextPage") nil) }}
-				{{- $currentNode.Scratch.Set "relearnNextPage" .node }}
+				{{- $currentNode.Store.Set "relearnPrevPage" .node }}
+			{{- else if and $isPostSelf .node.RelPermalink (eq ($currentNode.Store.Get "relearnNextPage") nil) }}
+				{{- $currentNode.Store.Set "relearnNextPage" .node }}
 			{{- end }}
 		{{- end }}
 	{{- end }}
