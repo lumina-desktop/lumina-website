@@ -58,7 +58,7 @@
           </ul>
         </div>
         {{- end }}
-        {{- $siteLanguages := .Site.Languages }}
+        {{- $siteLanguages := hugo.Sites }}
         {{- $showlangswitch := and hugo.IsMultilingual (not .Site.Params.disableLanguageSwitchingButton) (gt (int (len $siteLanguages)) 1) }}
         {{- $themevariants := partialCached "get-theme-variants.hugo" . }}
         {{- $showvariantswitch := gt (int (len $themevariants)) 1 }}
@@ -79,7 +79,7 @@
                       {{- $page := .Page }}
                       {{- $pageLang := .Page.Language.Lang }}
                       {{- range .Page.AllTranslations }}
-                      <option id="R-select-language-{{ .Language.Lang }}" value="#R-select-language-{{ .Language.Lang }}" data-url="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "basename" $basename) }}" lang="{{ .Language.LanguageCode }}"{{ if eq $pageLang .Language.Lang }} selected{{ end }}>{{ .Language.LanguageName }}</option>
+                      <option id="R-select-language-{{ .Language.Lang }}" value="#R-select-language-{{ .Language.Lang }}" data-url="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "basename" $basename) }}" lang="{{ .Language.Locale }}"{{ if eq $pageLang .Language.Lang }} selected{{ end }}>{{ .Language.Label }}</option>
                       {{- end }}
                     </select>
                   </div>
@@ -133,7 +133,7 @@
         {{- $isAncestor := and (not $isSelf) (.IsAncestor $currentNode) }}
         {{- $isActive := $isSelf }}
         {{- $pages := partial "pageHelper/pagesBy.html" (dict "page" .) }}
-        {{- $relearnIsHiddenFrom := index ($currentNode.Scratch.Get "relearnIsHiddenFrom") .RelPermalink }}
+        {{- $relearnIsHiddenFrom := index ($currentNode.Store.Get "relearnIsHiddenFrom") .RelPermalink }}
         {{- $hidden := and $relearnIsHiddenFrom (not $.showhidden) (not $isSelf) (not $isAncestor) }}
         {{- if $hidden }}
         {{- else }}
@@ -141,7 +141,7 @@
           {{- range $pages }}
             {{- $isSelfSub := eq .RelPermalink $currentFileRelPermalink }}
             {{- $isAncestorSub := and (not $isSelf) (.IsAncestor $currentNode) }}
-            {{- $relearnIsSubHiddenFrom := index ($currentNode.Scratch.Get "relearnIsHiddenFrom") .RelPermalink }}
+            {{- $relearnIsSubHiddenFrom := index ($currentNode.Store.Get "relearnIsHiddenFrom") .RelPermalink }}
             {{- $subHidden := and $relearnIsSubHiddenFrom (not $.showhidden) (not $isSelfSub) (not $isAncestorSub) }}
             {{- $numberOfVisibleChildren = add $numberOfVisibleChildren (int (not $subHidden)) }}
           {{- end }}

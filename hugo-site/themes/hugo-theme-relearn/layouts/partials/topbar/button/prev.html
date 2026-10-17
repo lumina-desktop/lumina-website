@@ -5,10 +5,10 @@
 	{{- $showPrevNext := (and (not .Params.disableNextPrev) (not .Site.Params.disableNextPrev)) }}
 	{{- if $showPrevNext }}
 		{{- $startarrow := "🡐" }}
-		{{- if eq (.Language.LanguageDirection | default (T "Reading-direction") | default "ltr") "rtl" }}
+		{{- if eq (.Language.Direction | default (T "Reading-direction") | default "ltr") "rtl" }}
 			{{- $startarrow = "🡒" }}
 		{{- end }}
-		{{- $prev := .Scratch.Get "relearnPrevPage" }}
+		{{- $prev := .Store.Get "relearnPrevPage" }}
 		{{- if eq .Page.Kind "home" }}
 			{{- $format := partial "get-format.hugo" .Page }}
 			{{- $outputFormat := partial "output-format.hugo" (dict "page" .Page "format" $format) }}

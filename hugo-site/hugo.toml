@@ -1,10 +1,14 @@
 baseURL = 'https://lumina-desktop.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Lumina Desktop Environment'
 copyright = '(c) 2012-2021 : Ken Moore & (c) 2021-2026 : JT Pennington'
 
 
 theme = 'hugo-theme-relearn'
+
+# Relearn requires the search output to populate the sidebar search.
+[outputs]
+  home = ['html', 'rss', 'search']
 
 [params]
 
