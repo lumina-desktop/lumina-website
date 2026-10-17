@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags :: Lumina Desktop Environment</title>
-    <link>https://lumina-desktop.github.io/tags/index.html</link>
+    <link>https://lumina-desktop.org/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2024 : JT Pennington</copyright>
-    <atom:link href="https://lumina-desktop.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>(c) 2012-2021 : Ken Moore &amp; (c) 2021-2026 : JT Pennington</copyright>
+    <atom:link href="https://lumina-desktop.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
