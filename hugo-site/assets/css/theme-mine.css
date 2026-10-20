@@ -4,8 +4,8 @@
     --MAIN-TEXT-color: #ececec; /* Color of text by default */
     --MAIN-BG-color: #607d8b; /* Color of main pages */
     --MAIN-TITLES-TEXT-color: #ececec; /* Color of titles h2-h3-h4-h5 */
-    --MAIN-LINK-color: #005aff; /* Color of links */
-    --MAIN-LINK-HOVER-color: #0757A6; /* Color of hovered links */
+    --MAIN-LINK-color: #050505; /* Readable against the blue-gray page background */
+    --MAIN-LINK-HOVER-color: #000000; /* Color of hovered links */
     --MAIN-ANCHOR-color: #ececec; /* color of anchors on titles */
     --grey-body: #333;
 
@@ -19,6 +19,8 @@
     --MENU-SECTIONS-ACTIVE-BG-color:#212121; /* Background color of the active section and its childs */
     --MENU-SECTIONS-BG-color:#212121; /* Background color of other sections */
     --MENU-SECTIONS-FG-color:#ffffff; /* Foreground color of other sections */
+    --MENU-HOME-LINK-color: #ececec;
+    --MENU-HOME-LINK-HOVER-color: #ffffff;
     --MENU-SECTIONS-LINK-color: #fffffff0; /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #d07316;  /* Color of links in menu, when hovered */
     --MENU-SECTION-ACTIVE-CATEGORY-color: #d07316; /* Color of active category text */
@@ -195,4 +197,14 @@ a:hover {
 	border-radius: 1ex;
 	padding: 1ex;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.blogpost a {
+    color: #ececec;
+}
+
+.blogpost a:hover,
+.blogpost a:focus-visible {
+    color: #ffffff;
+    text-decoration: underline;
 }
