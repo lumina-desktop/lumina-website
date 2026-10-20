@@ -16,7 +16,7 @@
           </div>
         {{ if $link }}</form>{{ end }}</search>
         {{- $assetBusting := partialCached "assetbusting.hugo" . }}
-        {{- $pageBaseLang := replaceRE "([a-z]+).*" "${1}" .Page.Language.LanguageCode }}
+        {{- $pageBaseLang := replaceRE "([a-z]+).*" "${1}" .Page.Language.Locale }}
         {{- $contentlangs := (union (slice | append (.Site.Params.additionalContentLanguage | default slice)) (slice $pageBaseLang)) }}
         {{- $quotedcontentlangs := slice }}
         {{- $missingcontentlangs := slice }}

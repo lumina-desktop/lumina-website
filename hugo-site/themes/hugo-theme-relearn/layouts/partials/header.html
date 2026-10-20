@@ -7,7 +7,7 @@
     {{- $basename = partial "BaseName.hugo" $format.RelPermalink }}
   {{- end }}
 {{- end }}
-{{- if eq . .Site.Sites.Default.Home }}
+{{- if eq . hugo.Sites.Default.Home }}
   {{- $hugoVersion := "0.121.0" }}
   {{- if lt hugo.Version $hugoVersion }}
     {{- errorf "The Relearn theme requires Hugo %s or later" $hugoVersion }}
@@ -16,7 +16,7 @@
 {{- if .Site.Params.description }}
   {{- warnf "UNSUPPORTED usage of 'params.description' config parameter found, move it to the frontmatter of your home page; see https://mcshelby.github.io/hugo-theme-relearn/basics/migration#600" }}
 {{- end }}
-<html lang="{{ .Page.Language.LanguageCode }}" dir="{{ .Page.Language.LanguageDirection | default (T "Reading-direction") | default "ltr" }}" itemscope itemtype="http://schema.org/Article">
+<html lang="{{ .Page.Language.Locale }}" dir="{{ .Page.Language.Direction | default (T "Reading-direction") | default "ltr" }}" itemscope itemtype="http://schema.org/Article">
   <head>
     {{- partial "meta.html" . }}
     {{- $page := . }}
@@ -29,11 +29,11 @@
         {{- if eq $index 0 }}
     <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="x-default">
         {{- end }}
-    <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="{{ .Language.LanguageCode }}">
+    <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="{{ .Language.Locale }}">
       {{- end }}
     {{- end }}
 
-    {{- if not (and .Title .RelPermalink (or (ne (.Scratch.Get "relearnIsHiddenStem") true) (ne .Site.Params.disableSeoHiddenPages true) ) ) }}
+    {{- if not (and .Title .RelPermalink (or (ne (.Store.Get "relearnIsHiddenStem") true) (ne .Site.Params.disableSeoHiddenPages true) ) ) }}
     {{- else }}
       {{- range .AlternativeOutputFormats }}
         {{- if eq .Rel "canonical" }}

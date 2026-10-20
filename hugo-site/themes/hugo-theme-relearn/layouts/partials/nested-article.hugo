@@ -24,7 +24,7 @@
     {{- $isSelf := eq .RelPermalink $currentFileRelPermalink }}
     {{- $isAncestor := and (not $isSelf) (.IsAncestor $currentNode) }}
     {{- $pages := partial "pageHelper/pagesBy.html" (dict "page" .) }}
-    {{- $relearnIsHiddenFrom := index ($currentNode.Scratch.Get "relearnIsHiddenFrom") .RelPermalink }}
+    {{- $relearnIsHiddenFrom := index ($currentNode.Store.Get "relearnIsHiddenFrom") .RelPermalink }}
     {{- $hidden := and $relearnIsHiddenFrom (not $.showhidden) (not $isSelf) (not $isAncestor) }}
     {{- if $hidden }}
     {{- else }}
